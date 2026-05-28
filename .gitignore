@@ -16,6 +16,8 @@
 /.firebase/
 firebase-debug.log*
 ui-debug.log*
+/logs/firebase-*.log
+/logs/gcloud-*.log
 __pycache__/
 *.py[cod]
 
