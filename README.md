@@ -34,6 +34,12 @@ The archive home page adds a mirrored-offsite objective and course index above t
 
 ## Rebuild
 
+Install the Python dependency if needed:
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
 Regenerate the themed archive from the current mirror:
 
 ```bash
