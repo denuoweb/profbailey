@@ -54,7 +54,7 @@ http://localhost:8000/
 
 ## Deploy
 
-Deploy the generated archive to Firebase Hosting:
+The archive includes course binaries and executable-extension files, so Firebase Hosting requires the project to be on the Blaze billing plan before deployment. After upgrading `profbailey` to Blaze, deploy the generated archive to Firebase Hosting:
 
 ```bash
 firebase deploy --project profbailey --only hosting
