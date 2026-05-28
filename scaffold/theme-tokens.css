@@ -1,0 +1,133 @@
+:root,
+html[data-theme="light"] {
+  color-scheme: light;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+
+  --page-bg:
+    radial-gradient(1200px 780px at 8% -8%, rgba(0, 98, 132, 0.12) 0%, transparent 55%),
+    radial-gradient(920px 640px at 100% 0%, rgba(127, 29, 29, 0.08) 0%, transparent 48%),
+    #f4f7f8;
+  --surface-1: rgba(255, 255, 255, 0.92);
+  --surface-2: rgba(255, 255, 255, 0.76);
+  --surface-code: #e9eff3;
+
+  --text-color: #14222d;
+  --text-muted: #35515f;
+  --accent-color: #004d78;
+  --highlight-color: #6b21a8;
+  --danger-color: #8b1e3f;
+
+  --border-color: rgba(20, 34, 45, 0.12);
+  --border-strong: rgba(0, 77, 120, 0.26);
+  --shadow-soft: 0 16px 36px rgba(20, 34, 45, 0.1);
+  --shadow-strong: 0 22px 56px rgba(20, 34, 45, 0.14);
+
+  --row-bg: rgba(20, 34, 45, 0.03);
+  --row-hover: rgba(0, 77, 120, 0.08);
+  --focus-ring: #6b21a8;
+  --selection-bg: #004d78;
+  --selection-text: #ffffff;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+
+  --page-bg:
+    radial-gradient(1100px 760px at 6% -12%, rgba(125, 211, 252, 0.12) 0%, transparent 48%),
+    radial-gradient(980px 700px at 100% 0%, rgba(192, 132, 252, 0.1) 0%, transparent 45%),
+    radial-gradient(1200px 880px at 50% 120%, rgba(14, 165, 233, 0.08) 0%, transparent 52%),
+    #071018;
+  --surface-1: rgba(13, 21, 33, 0.92);
+  --surface-2: rgba(10, 16, 26, 0.82);
+  --surface-code: #0f1c2b;
+
+  --text-color: #ebf2f7;
+  --text-muted: #a9b8c5;
+  --accent-color: #7dd3fc;
+  --highlight-color: #c084fc;
+  --danger-color: #fb7185;
+
+  --border-color: rgba(255, 255, 255, 0.1);
+  --border-strong: rgba(125, 211, 252, 0.24);
+  --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.32);
+  --shadow-strong: 0 26px 64px rgba(0, 0, 0, 0.42);
+
+  --row-bg: rgba(255, 255, 255, 0.03);
+  --row-hover: rgba(125, 211, 252, 0.08);
+  --focus-ring: #7dd3fc;
+  --selection-bg: #7dd3fc;
+  --selection-text: #071018;
+}
+
+html[data-theme="cyber"] {
+  color-scheme: dark;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+
+  --page-bg:
+    radial-gradient(980px 620px at 100% 0%, rgba(0, 255, 204, 0.16) 0%, transparent 45%),
+    radial-gradient(860px 520px at 0% 0%, rgba(97, 218, 251, 0.14) 0%, transparent 42%),
+    radial-gradient(980px 760px at 50% 120%, rgba(255, 95, 162, 0.08) 0%, transparent 48%),
+    #050b10;
+  --surface-1: rgba(10, 21, 28, 0.93);
+  --surface-2: rgba(7, 16, 20, 0.84);
+  --surface-code: #08161b;
+
+  --text-color: #e7f4f2;
+  --text-muted: #97c6be;
+  --accent-color: #00ffcc;
+  --highlight-color: #61dafb;
+  --danger-color: #ff5fa2;
+
+  --border-color: rgba(0, 255, 204, 0.22);
+  --border-strong: rgba(97, 218, 251, 0.36);
+  --shadow-soft: 0 18px 42px rgba(0, 0, 0, 0.34);
+  --shadow-strong: 0 28px 68px rgba(0, 0, 0, 0.44);
+
+  --row-bg: rgba(255, 255, 255, 0.03);
+  --row-hover: rgba(97, 218, 251, 0.08);
+  --focus-ring: #00ffcc;
+  --selection-bg: #00ffcc;
+  --selection-text: #041015;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) {
+    color-scheme: dark;
+
+    --font-display: "Fraunces", Georgia, serif;
+    --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+
+    --page-bg:
+      radial-gradient(1100px 760px at 6% -12%, rgba(125, 211, 252, 0.12) 0%, transparent 48%),
+      radial-gradient(980px 700px at 100% 0%, rgba(192, 132, 252, 0.1) 0%, transparent 45%),
+      radial-gradient(1200px 880px at 50% 120%, rgba(14, 165, 233, 0.08) 0%, transparent 52%),
+      #071018;
+    --surface-1: rgba(13, 21, 33, 0.92);
+    --surface-2: rgba(10, 16, 26, 0.82);
+    --surface-code: #0f1c2b;
+
+    --text-color: #ebf2f7;
+    --text-muted: #a9b8c5;
+    --accent-color: #7dd3fc;
+    --highlight-color: #c084fc;
+    --danger-color: #fb7185;
+
+    --border-color: rgba(255, 255, 255, 0.1);
+    --border-strong: rgba(125, 211, 252, 0.24);
+    --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.32);
+    --shadow-strong: 0 26px 64px rgba(0, 0, 0, 0.42);
+
+    --row-bg: rgba(255, 255, 255, 0.03);
+    --row-hover: rgba(125, 211, 252, 0.08);
+    --focus-ring: #7dd3fc;
+    --selection-bg: #7dd3fc;
+    --selection-text: #071018;
+  }
+}

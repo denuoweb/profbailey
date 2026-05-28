@@ -1,0 +1,26 @@
+# Generated archive content is deployed to Firebase Hosting, not Git.
+/archive/
+
+# Raw mirrored source content is too large for GitHub.
+/mirror/
+
+# Local packaging output for Cloud Storage uploads.
+/dist/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.zst
+
+# Firebase and tool caches.
+/.firebase/
+firebase-debug.log*
+ui-debug.log*
+__pycache__/
+*.py[cod]
+
+# Local OS/editor noise.
+.DS_Store
+Thumbs.db
+*.swp
+*~

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fresh generic showcase for light, dark, and cyber themes.">
+  <title>Accessible Theme Showcase</title>
+  <link rel="stylesheet" href="theme-tokens.css">
+  <link rel="stylesheet" href="theme-showcase.css">
+  <script type="module" src="theme-toggle.js"></script>
+</head>
+<body>
+  <main class="showcase" id="main-content">
+    <div class="theme-toolbar" data-theme-controls role="group" aria-label="Theme switcher">
+      <button type="button" data-theme="light" aria-pressed="true">Light</button>
+      <button type="button" data-theme="dark" aria-pressed="false">Dark</button>
+      <button type="button" data-theme="cyber" aria-pressed="false">Cyber</button>
+    </div>
+
+    <a class="skip-link" href="#overview-heading">Skip to main content</a>
+
+    <header class="showcase-section">
+      <h1>Dr. Avery Chen</h1>
+      <p class="lede">
+        A fresh, generic demo page built to show the full impact of a reusable light, dark, and cyber theme system.
+        All names, organizations, images, and metrics below are placeholder content.
+      </p>
+    </header>
+
+    <section class="hero showcase-section" aria-labelledby="overview-heading">
+      <div class="hero-copy">
+        <h2 id="overview-heading">Overview</h2>
+        <p>
+          Avery Chen teaches
+          <a href="https://example.com/graphics">interactive graphics</a>,
+          leads a systems lab, and develops courseware for visualization, observability, and performance storytelling.
+          This page is intentionally broad enough to show how the themes affect typography, spacing, hierarchy, data views,
+          forms, and code.
+        </p>
+        <p>
+          The implementation emphasizes keyboard focus, high contrast, modern semantic structure, and theme switching that follows
+          explicit user choice while still supporting system dark mode by default.
+        </p>
+
+        <div class="pill-row" aria-label="Quick facts">
+          <span class="pill">Latest update: October 3, 2026</span>
+          <span class="pill">Three themes</span>
+          <span class="pill">Accessibility-first demo</span>
+        </div>
+
+        <ul class="metric-list" aria-label="Key metrics">
+          <li><span class="metric-value">128</span>Students in the current cohort</li>
+          <li><span class="metric-value">11</span>Public demos shipped this cycle</li>
+          <li><span class="metric-value">34</span>Research advisees mentored</li>
+        </ul>
+      </div>
+
+      <div class="hero-media">
+        <img
+          class="portrait"
+          src="https://placehold.co/420x520/png?text=Portrait"
+          alt="Portrait placeholder for Dr. Avery Chen">
+        <img
+          class="aux-image"
+          src="https://placehold.co/420x220/png?text=Studio+Snapshot"
+          alt="Studio or lab placeholder">
+      </div>
+    </section>
+
+    <div class="section-grid showcase-section">
+      <section class="card" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Profile</h2>
+        <p>
+          Example State University<br>
+          School of Computing<br>
+          4500 Innovation Drive<br>
+          Arcadia, OR 97000<br>
+          avery.chen@example.edu
+        </p>
+        <p>
+          Useful links:
+          <a href="https://example.com/resources">resource library</a>,
+          <a href="https://example.com/office-hours">office hours</a>,
+          <a href="https://example.com/publications">publications</a>.
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="work-heading">
+        <h2 id="work-heading">Current Work</h2>
+        <ul>
+          <li>Immersive analytics for climate and infrastructure data.</li>
+          <li>Studio-based graphics instruction with production constraints.</li>
+          <li>Open tooling for debugging distributed simulation pipelines.</li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="showcase-section table-shell" aria-labelledby="education-heading">
+      <div class="table-shell-body">
+        <h2 id="education-heading">Education</h2>
+        <table>
+          <caption>Example academic history used to validate table contrast, borders, captions, and hover states.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Degree</th>
+              <th scope="col">Institution</th>
+              <th scope="col">Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ph.D. in Computer Science</td>
+              <td>North Coast Institute of Technology</td>
+              <td>2014</td>
+            </tr>
+            <tr>
+              <td>M.S. in Visualization</td>
+              <td>Lakeview University</td>
+              <td>2010</td>
+            </tr>
+            <tr>
+              <td>B.S. in Mechanical Engineering</td>
+              <td>Lakeview University</td>
+              <td>2008</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="showcase-section" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Selected Projects</h2>
+      <div class="section-grid">
+        <article class="card">
+          <h3><a href="https://example.com/spectra">Project Spectra</a></h3>
+          <p>Immersive sustainability dashboard tooling for campus-scale decision support.</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://example.com/atlas-grid">Atlas Grid</a></h3>
+          <p>Distributed simulation review platform for research teams and course studios.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="showcase-section" aria-labelledby="stress-heading">
+      <h2 id="stress-heading">Theme Stress Test</h2>
+      <blockquote>
+        “Readable systems help people reason about design, performance, and failure at the same time.”
+      </blockquote>
+      <p>
+        This paragraph shows <strong>bold text</strong>, <em>italic text</em>, inline code like
+        <code>renderFrame(theme)</code>, and a keyboard chord using <kbd>Ctrl</kbd> + <kbd>K</kbd>.
+      </p>
+      <pre><code>const demoStats = {
+  activeTheme: "light | dark | cyber",
+  cohortSize: 128,
+  demosShipped: 11,
+  officeHours: ["Tue 13:00", "Thu 15:30"]
+};</code></pre>
+    </section>
+
+    <section class="showcase-section" aria-labelledby="notes-heading">
+      <h2 id="notes-heading">Program Notes</h2>
+      <ul class="text-columns">
+        <li>Weekly critique combines accessibility, interaction design, and performance review.</li>
+        <li>Students present both design rationale and instrumentation evidence.</li>
+        <li>All prototype releases require keyboard testing before sign-off.</li>
+        <li>Theme variations are validated against content-rich layouts, not single cards.</li>
+        <li>Public image URLs are used here to keep the demo self-contained.</li>
+        <li>The package is intentionally generic and not tied to any legacy page structure.</li>
+      </ul>
+    </section>
+
+    <section class="showcase-section" aria-labelledby="form-heading">
+      <h2 id="form-heading">Contact Form Demo</h2>
+      <form action="#" method="get">
+        <div class="field">
+          <label for="demo-name">Name</label>
+          <input id="demo-name" name="name" type="text" autocomplete="name" placeholder="Jordan Rivera">
+        </div>
+
+        <div class="field">
+          <label for="demo-topic">Topic</label>
+          <select id="demo-topic" name="topic">
+            <option>Research collaboration</option>
+            <option>Student advising</option>
+            <option>Guest lecture</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="demo-message">Message</label>
+          <textarea id="demo-message" name="message" placeholder="Tell me about your project, timeline, and goals."></textarea>
+        </div>
+
+        <div class="submit-row">
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

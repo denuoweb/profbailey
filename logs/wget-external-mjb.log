@@ -1,0 +1,1774 @@
+--2026-05-28 15:07:22--  https://web.engr.oregonstate.edu/~mjb/
+Resolving web.engr.oregonstate.edu (web.engr.oregonstate.edu)... 128.193.40.12
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 61 [text/html]
+Saving to: ‘mirror/web.engr.oregonstate.edu/~mjb/index.html’
+
+     0K                                                       100% 60.4M=0s
+
+2026-05-28 15:07:23 (60.4 MB/s) - ‘mirror/web.engr.oregonstate.edu/~mjb/index.html’ saved [61/61]
+
+--2026-05-28 15:07:23--  https://web.engr.oregonstate.edu/~mjb/WebMjb/Papers/papers.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/WebMjb/Papers/papers.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:23--  https://web.engr.oregonstate.edu/~mjb/WebMjb/mjb.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/WebMjb/mjb.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:23--  https://web.engr.oregonstate.edu/~mjb/blender
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://web.engr.oregonstate.edu/~mjb/blender/ [following]
+--2026-05-28 15:07:23--  https://web.engr.oregonstate.edu/~mjb/blender/
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 25783 (25K) [text/html]
+Saving to: ‘mirror/web.engr.oregonstate.edu/~mjb/blender’
+
+     0K .......... .......... .....                           100% 4.67M=0.005s
+
+2026-05-28 15:07:23 (4.67 MB/s) - ‘mirror/web.engr.oregonstate.edu/~mjb/blender’ saved [25783/25783]
+
+--2026-05-28 15:07:23--  https://web.engr.oregonstate.edu/~mjb/cgeducation
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://web.engr.oregonstate.edu/~mjb/cgeducation/ [following]
+--2026-05-28 15:07:23--  https://web.engr.oregonstate.edu/~mjb/cgeducation/
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 4751 (4.6K) [text/html]
+Saving to: ‘mirror/web.engr.oregonstate.edu/~mjb/cgeducation’
+
+     0K ....                                                  100% 15.7M=0s
+
+2026-05-28 15:07:23 (15.7 MB/s) - ‘mirror/web.engr.oregonstate.edu/~mjb/cgeducation’ saved [4751/4751]
+
+--2026-05-28 15:07:23--  https://web.engr.oregonstate.edu/~mjb/chromadepth
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://web.engr.oregonstate.edu/~mjb/chromadepth/ [following]
+--2026-05-28 15:07:23--  https://web.engr.oregonstate.edu/~mjb/chromadepth/
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 8366 (8.2K) [text/html]
+Saving to: ‘mirror/web.engr.oregonstate.edu/~mjb/chromadepth’
+
+     0K ........                                              100% 1.70M=0.005s
+
+2026-05-28 15:07:23 (1.70 MB/s) - ‘mirror/web.engr.oregonstate.edu/~mjb/chromadepth’ saved [8366/8366]
+
+--2026-05-28 15:07:23--  https://web.engr.oregonstate.edu/~mjb/cs491/
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs491/index.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:23--  https://web.engr.oregonstate.edu/~mjb/cs491/Projects/proj01.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs491/Projects/proj01.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:23--  https://web.engr.oregonstate.edu/~mjb/cs491/Projects/proj02.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs491/Projects/proj02.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:23--  https://web.engr.oregonstate.edu/~mjb/cs491/Projects/proj03.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs491/Projects/proj03.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:23--  https://web.engr.oregonstate.edu/~mjb/cs491/Projects/proj04.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs491/Projects/proj04.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:23--  https://web.engr.oregonstate.edu/~mjb/cs491/Projects/proj05.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs491/Projects/proj05.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:23--  https://web.engr.oregonstate.edu/~mjb/cs491/Projects/proj06.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs491/Projects/proj06.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:24--  https://web.engr.oregonstate.edu/~mjb/cs491/Projects/proj07.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs491/Projects/proj07.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:24--  https://web.engr.oregonstate.edu/~mjb/cs491/Tests/test01.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs491/Tests/test01.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:24--  https://web.engr.oregonstate.edu/~mjb/cs491/Tests/test02.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs491/Tests/test02.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:24--  https://web.engr.oregonstate.edu/~mjb/cs491/calendar.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs491/calendar.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:24--  https://web.engr.oregonstate.edu/~mjb/cs491/glmprimer.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs491/glmprimer.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:24--  https://web.engr.oregonstate.edu/~mjb/cs491/index.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs491/index.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:24--  https://web.engr.oregonstate.edu/~mjb/cs519v/
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs519v/index.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:24--  https://web.engr.oregonstate.edu/~mjb/cs519v/Projects/proj01.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs519v/Projects/proj01.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:24--  https://web.engr.oregonstate.edu/~mjb/cs519v/Projects/proj02.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs519v/Projects/proj02.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:24--  https://web.engr.oregonstate.edu/~mjb/cs519v/Projects/proj03.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs519v/Projects/proj03.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:24--  https://web.engr.oregonstate.edu/~mjb/cs519v/Projects/proj04.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs519v/Projects/proj04.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:24--  https://web.engr.oregonstate.edu/~mjb/cs519v/Projects/proj05.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs519v/Projects/proj05.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:24--  https://web.engr.oregonstate.edu/~mjb/cs519v/Tests/test01.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs519v/Tests/test01.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:24--  https://web.engr.oregonstate.edu/~mjb/cs519v/Tests/test02.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs519v/Tests/test02.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:24--  https://web.engr.oregonstate.edu/~mjb/cs519v/calendar.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs519v/calendar.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:24--  https://web.engr.oregonstate.edu/~mjb/cs519v/index.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs519v/index.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:24--  https://web.engr.oregonstate.edu/~mjb/cs550/
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs550/index.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:25--  https://web.engr.oregonstate.edu/~mjb/cs550/Projects/paperproject.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs550/Projects/paperproject.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:25--  https://web.engr.oregonstate.edu/~mjb/cs550/Projects/planettextures.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs550/Projects/planettextures.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:25--  https://web.engr.oregonstate.edu/~mjb/cs550/Projects/proj01.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs550/Projects/proj01.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:25--  https://web.engr.oregonstate.edu/~mjb/cs550/Projects/proj02.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs550/Projects/proj02.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:25--  https://web.engr.oregonstate.edu/~mjb/cs550/Projects/proj03.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs550/Projects/proj03.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:25--  https://web.engr.oregonstate.edu/~mjb/cs550/Projects/proj04.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs550/Projects/proj04.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:25--  https://web.engr.oregonstate.edu/~mjb/cs550/Projects/proj05.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs550/Projects/proj05.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:25--  https://web.engr.oregonstate.edu/~mjb/cs550/Projects/proj06.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs550/Projects/proj06.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:25--  https://web.engr.oregonstate.edu/~mjb/cs550/Projects/proj07.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs550/Projects/proj07.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:25--  https://web.engr.oregonstate.edu/~mjb/cs550/Tests/test01.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs550/Tests/test01.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:25--  https://web.engr.oregonstate.edu/~mjb/cs550/Tests/test02.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs550/Tests/test02.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:25--  https://web.engr.oregonstate.edu/~mjb/cs550/calendar.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs550/calendar.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:25--  https://web.engr.oregonstate.edu/~mjb/cs550/index.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs550/index.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:25--  https://web.engr.oregonstate.edu/~mjb/cs550/lookingglassquilts.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs550/lookingglassquilts.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:25--  https://web.engr.oregonstate.edu/~mjb/cs553/
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs553/index.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:25--  https://web.engr.oregonstate.edu/~mjb/cs553/Projects/dataproject.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs553/Projects/dataproject.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:25--  https://web.engr.oregonstate.edu/~mjb/cs553/Projects/proj01.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs553/Projects/proj01.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:26--  https://web.engr.oregonstate.edu/~mjb/cs553/Projects/proj02.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs553/Projects/proj02.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:26--  https://web.engr.oregonstate.edu/~mjb/cs553/Projects/proj03.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs553/Projects/proj03.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:26--  https://web.engr.oregonstate.edu/~mjb/cs553/Projects/proj04.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs553/Projects/proj04.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:26--  https://web.engr.oregonstate.edu/~mjb/cs553/Projects/proj05.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs553/Projects/proj05.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:26--  https://web.engr.oregonstate.edu/~mjb/cs553/Projects/proj06.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs553/Projects/proj06.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:26--  https://web.engr.oregonstate.edu/~mjb/cs553/Projects/proj07.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs553/Projects/proj07.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:26--  https://web.engr.oregonstate.edu/~mjb/cs553/Projects/proj08.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs553/Projects/proj08.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:26--  https://web.engr.oregonstate.edu/~mjb/cs553/Tests/test01.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs553/Tests/test01.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:26--  https://web.engr.oregonstate.edu/~mjb/cs553/Tests/test02.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs553/Tests/test02.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:26--  https://web.engr.oregonstate.edu/~mjb/cs553/calendar.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs553/calendar.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:26--  https://web.engr.oregonstate.edu/~mjb/cs553/gettingglut.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs553/gettingglut.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:26--  https://web.engr.oregonstate.edu/~mjb/cs553/index.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs553/index.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:26--  https://web.engr.oregonstate.edu/~mjb/cs553/vhr.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs553/vhr.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:26--  https://web.engr.oregonstate.edu/~mjb/cs557/
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs557/index.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:26--  https://web.engr.oregonstate.edu/~mjb/cs557/Obj/index.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 404 Not Found
+2026-05-28 15:07:26 ERROR 404: Not Found.
+
+--2026-05-28 15:07:26--  https://web.engr.oregonstate.edu/~mjb/cs557/Projects/finalproject.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs557/Projects/finalproject.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:26--  https://web.engr.oregonstate.edu/~mjb/cs557/Projects/paperproject.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs557/Projects/paperproject.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:27--  https://web.engr.oregonstate.edu/~mjb/cs557/Projects/proj01.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs557/Projects/proj01.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:27--  https://web.engr.oregonstate.edu/~mjb/cs557/Projects/proj02.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs557/Projects/proj02.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:27--  https://web.engr.oregonstate.edu/~mjb/cs557/Projects/proj03A.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs557/Projects/proj03A.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:27--  https://web.engr.oregonstate.edu/~mjb/cs557/Projects/proj03B.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs557/Projects/proj03B.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:27--  https://web.engr.oregonstate.edu/~mjb/cs557/Projects/proj04.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs557/Projects/proj04.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:27--  https://web.engr.oregonstate.edu/~mjb/cs557/Projects/proj05.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs557/Projects/proj05.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:27--  https://web.engr.oregonstate.edu/~mjb/cs557/Projects/proj06.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs557/Projects/proj06.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:27--  https://web.engr.oregonstate.edu/~mjb/cs557/Projects/proj07A.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs557/Projects/proj07A.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:27--  https://web.engr.oregonstate.edu/~mjb/cs557/Projects/proj07B.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs557/Projects/proj07B.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:27--  https://web.engr.oregonstate.edu/~mjb/cs557/Tests/test01.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs557/Tests/test01.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:27--  https://web.engr.oregonstate.edu/~mjb/cs557/Tests/test02.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs557/Tests/test02.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:27--  https://web.engr.oregonstate.edu/~mjb/cs557/calendar.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs557/calendar.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:27--  https://web.engr.oregonstate.edu/~mjb/cs557/index.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs557/index.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:27--  https://web.engr.oregonstate.edu/~mjb/cs575/
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs575/index.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:27--  https://web.engr.oregonstate.edu/~mjb/cs575/Projects/paper.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs575/Projects/paper.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:27--  https://web.engr.oregonstate.edu/~mjb/cs575/Projects/proj00.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs575/Projects/proj00.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:28--  https://web.engr.oregonstate.edu/~mjb/cs575/Projects/proj01.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs575/Projects/proj01.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:28--  https://web.engr.oregonstate.edu/~mjb/cs575/Projects/proj02.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs575/Projects/proj02.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:28--  https://web.engr.oregonstate.edu/~mjb/cs575/Projects/proj03.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs575/Projects/proj03.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:28--  https://web.engr.oregonstate.edu/~mjb/cs575/Projects/proj04.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs575/Projects/proj04.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:28--  https://web.engr.oregonstate.edu/~mjb/cs575/Projects/proj05.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs575/Projects/proj05.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:28--  https://web.engr.oregonstate.edu/~mjb/cs575/Projects/proj06.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs575/Projects/proj06.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:28--  https://web.engr.oregonstate.edu/~mjb/cs575/Projects/proj07.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs575/Projects/proj07.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:28--  https://web.engr.oregonstate.edu/~mjb/cs575/Tests/test01.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs575/Tests/test01.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:28--  https://web.engr.oregonstate.edu/~mjb/cs575/Tests/test02.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs575/Tests/test02.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:28--  https://web.engr.oregonstate.edu/~mjb/cs575/calendar.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs575/calendar.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:28--  https://web.engr.oregonstate.edu/~mjb/cs575/handouts.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs575/handouts.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:28--  https://web.engr.oregonstate.edu/~mjb/cs575/index.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs575/index.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:28--  https://web.engr.oregonstate.edu/~mjb/cs575/myresumeadvice.html
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 304 Not Modified
+File ‘mirror/web.engr.oregonstate.edu/~mjb/cs575/myresumeadvice.html’ not modified on server. Omitting download.
+
+--2026-05-28 15:07:28--  https://web.engr.oregonstate.edu/~mjb/cs575c/OpenclFiles/PrintInfo.exe
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 46080 (45K) [application/octet-stream]
+Saving to: ‘mirror/web.engr.oregonstate.edu/~mjb/cs575c/OpenclFiles/PrintInfo.exe’
+
+     0K .......... .......... .......... .......... .....     100%  751K=0.06s
+
+2026-05-28 15:07:28 (751 KB/s) - ‘mirror/web.engr.oregonstate.edu/~mjb/cs575c/OpenclFiles/PrintInfo.exe’ saved [46080/46080]
+
+--2026-05-28 15:07:29--  https://web.engr.oregonstate.edu/~mjb/cs575c/OpenclFiles/printinfo
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 13032 (13K)
+Saving to: ‘mirror/web.engr.oregonstate.edu/~mjb/cs575c/OpenclFiles/printinfo’
+
+     0K .......... ..                                         100%  377K=0.03s
+
+2026-05-28 15:07:29 (377 KB/s) - ‘mirror/web.engr.oregonstate.edu/~mjb/cs575c/OpenclFiles/printinfo’ saved [13032/13032]
+
+--2026-05-28 15:07:29--  https://web.engr.oregonstate.edu/~mjb/cs575c/OpenclFiles/printinfo.cl
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 146 [application/simple-filter+xml]
+Saving to: ‘mirror/web.engr.oregonstate.edu/~mjb/cs575c/OpenclFiles/printinfo.cl’
+
+     0K                                                       100% 12.3M=0s
+
+2026-05-28 15:07:29 (12.3 MB/s) - ‘mirror/web.engr.oregonstate.edu/~mjb/cs575c/OpenclFiles/printinfo.cl’ saved [146/146]
+
+--2026-05-28 15:07:29--  https://web.engr.oregonstate.edu/~mjb/cs575c/OpenclFiles/printinfo.cpp
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 5376 (5.2K) [text/plain]
+Saving to: ‘mirror/web.engr.oregonstate.edu/~mjb/cs575c/OpenclFiles/printinfo.cpp’
+
+     0K .....                                                 100% 3.84M=0.001s
+
+2026-05-28 15:07:29 (3.84 MB/s) - ‘mirror/web.engr.oregonstate.edu/~mjb/cs575c/OpenclFiles/printinfo.cpp’ saved [5376/5376]
+
+--2026-05-28 15:07:29--  https://web.engr.oregonstate.edu/~mjb/cs575c/errorcodes.cpp
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 3362 (3.3K) [text/plain]
+Saving to: ‘mirror/web.engr.oregonstate.edu/~mjb/cs575c/errorcodes.cpp’
+
+     0K ...                                                   100%  727K=0.005s
+
+2026-05-28 15:07:29 (727 KB/s) - ‘mirror/web.engr.oregonstate.edu/~mjb/cs575c/errorcodes.cpp’ saved [3362/3362]
+
+--2026-05-28 15:07:29--  https://web.engr.oregonstate.edu/~mjb/paraview
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://web.engr.oregonstate.edu/~mjb/paraview/ [following]
+--2026-05-28 15:07:29--  https://web.engr.oregonstate.edu/~mjb/paraview/
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 7347 (7.2K) [text/html]
+Saving to: ‘mirror/web.engr.oregonstate.edu/~mjb/paraview’
+
+     0K .......                                               100% 8.02M=0.001s
+
+2026-05-28 15:07:29 (8.02 MB/s) - ‘mirror/web.engr.oregonstate.edu/~mjb/paraview’ saved [7347/7347]
+
+--2026-05-28 15:07:29--  https://web.engr.oregonstate.edu/~mjb/paraview/
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 7347 (7.2K) [text/html]
+Saving to: ‘mirror/web.engr.oregonstate.edu/~mjb/paraview/index.html’
+
+     0K .......                                               100% 7.80M=0.001s
+
+2026-05-28 15:07:29 (7.80 MB/s) - ‘mirror/web.engr.oregonstate.edu/~mjb/paraview/index.html’ saved [7347/7347]
+
+--2026-05-28 15:07:29--  https://web.engr.oregonstate.edu/~mjb/processing
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://web.engr.oregonstate.edu/~mjb/processing/ [following]
+--2026-05-28 15:07:29--  https://web.engr.oregonstate.edu/~mjb/processing/
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 15671 (15K) [text/html]
+Saving to: ‘mirror/web.engr.oregonstate.edu/~mjb/processing’
+
+     0K .......... .....                                      100% 2.23M=0.007s
+
+2026-05-28 15:07:29 (2.23 MB/s) - ‘mirror/web.engr.oregonstate.edu/~mjb/processing’ saved [15671/15671]
+
+--2026-05-28 15:07:29--  https://web.engr.oregonstate.edu/~mjb/scratch
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://web.engr.oregonstate.edu/~mjb/scratch/ [following]
+--2026-05-28 15:07:29--  https://web.engr.oregonstate.edu/~mjb/scratch/
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 12467 (12K) [text/html]
+Saving to: ‘mirror/web.engr.oregonstate.edu/~mjb/scratch’
+
+     0K .......... ..                                         100% 4.30M=0.003s
+
+2026-05-28 15:07:29 (4.30 MB/s) - ‘mirror/web.engr.oregonstate.edu/~mjb/scratch’ saved [12467/12467]
+
+--2026-05-28 15:07:29--  https://web.engr.oregonstate.edu/~mjb/sketchup
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://web.engr.oregonstate.edu/~mjb/sketchup/ [following]
+--2026-05-28 15:07:29--  https://web.engr.oregonstate.edu/~mjb/sketchup/
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 6769 (6.6K) [text/html]
+Saving to: ‘mirror/web.engr.oregonstate.edu/~mjb/sketchup’
+
+     0K ......                                                100% 47.4M=0s
+
+2026-05-28 15:07:29 (47.4 MB/s) - ‘mirror/web.engr.oregonstate.edu/~mjb/sketchup’ saved [6769/6769]
+
+--2026-05-28 15:07:29--  https://web.engr.oregonstate.edu/~mjb/tinkercad
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://web.engr.oregonstate.edu/~mjb/tinkercad/ [following]
+--2026-05-28 15:07:29--  https://web.engr.oregonstate.edu/~mjb/tinkercad/
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 6266 (6.1K) [text/html]
+Saving to: ‘mirror/web.engr.oregonstate.edu/~mjb/tinkercad’
+
+     0K ......                                                100%  683K=0.009s
+
+2026-05-28 15:07:30 (683 KB/s) - ‘mirror/web.engr.oregonstate.edu/~mjb/tinkercad’ saved [6266/6266]
+
+--2026-05-28 15:07:30--  https://web.engr.oregonstate.edu/~mjb/vulkan
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://web.engr.oregonstate.edu/~mjb/vulkan/ [following]
+--2026-05-28 15:07:30--  https://web.engr.oregonstate.edu/~mjb/vulkan/
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 25875 (25K) [text/html]
+Saving to: ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan’
+
+     0K .......... .......... .....                           100% 4.57M=0.005s
+
+2026-05-28 15:07:30 (4.57 MB/s) - ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan’ saved [25875/25875]
+
+--2026-05-28 15:07:30--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/AccelerationStructures.1pp.pdf
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 905229 (884K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/AccelerationStructures.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/AccelerationStructures.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:30--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/AccelerationStructures.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 991367 (968K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/AccelerationStructures.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/AccelerationStructures.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:30--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/AccelerationStructures.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 946226 (924K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/AccelerationStructures.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/AccelerationStructures.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:30--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/AccelerationStructures.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 927266 (906K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/AccelerationStructures.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/AccelerationStructures.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:30--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ComputeShaders.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1350559 (1.3M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ComputeShaders.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ComputeShaders.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:31--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ComputeShaders.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1428581 (1.4M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ComputeShaders.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ComputeShaders.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:31--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ComputeShaders.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1413400 (1.3M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ComputeShaders.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ComputeShaders.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:31--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ComputeShaders.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1404613 (1.3M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ComputeShaders.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ComputeShaders.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:31--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DataBuffers.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1174646 (1.1M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DataBuffers.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DataBuffers.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:31--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DataBuffers.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1127664 (1.1M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DataBuffers.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DataBuffers.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:31--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DataBuffers.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1064000 (1.0M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DataBuffers.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DataBuffers.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:32--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DataBuffers.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1025238 (1001K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DataBuffers.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DataBuffers.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:32--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DescriptorSets.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1126821 (1.1M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DescriptorSets.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DescriptorSets.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:32--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DescriptorSets.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1006236 (983K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DescriptorSets.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DescriptorSets.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:32--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DescriptorSets.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 934171 (912K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DescriptorSets.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DescriptorSets.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:32--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DescriptorSets.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 889370 (869K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DescriptorSets.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DescriptorSets.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:32--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Drawing.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1462592 (1.4M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Drawing.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Drawing.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:33--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Drawing.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1231934 (1.2M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Drawing.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Drawing.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:33--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Drawing.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1175130 (1.1M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Drawing.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Drawing.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:33--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Drawing.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1138507 (1.1M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Drawing.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Drawing.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:33--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DynamicStateVariables.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 602439 (588K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DynamicStateVariables.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DynamicStateVariables.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:33--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DynamicStateVariables.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 763067 (745K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DynamicStateVariables.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DynamicStateVariables.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:33--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DynamicStateVariables.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 754005 (736K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DynamicStateVariables.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DynamicStateVariables.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:34--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DynamicStateVariables.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 749887 (732K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DynamicStateVariables.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/DynamicStateVariables.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:34--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/FiringRays.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1333804 (1.3M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/FiringRays.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/FiringRays.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:34--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/FiringRays.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 998219 (975K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/FiringRays.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/FiringRays.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:34--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/FiringRays.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 934209 (912K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/FiringRays.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/FiringRays.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:34--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/FiringRays.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 869945 (850K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/FiringRays.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/FiringRays.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:34--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLFW.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 659580 (644K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLFW.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLFW.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:35--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLFW.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 823862 (805K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLFW.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLFW.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:35--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLFW.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 814537 (795K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLFW.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLFW.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:35--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLFW.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 807956 (789K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLFW.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLFW.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:35--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLM.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1898049 (1.8M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLM.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLM.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:35--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLM.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1816287 (1.7M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLM.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLM.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:36--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLM.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1786947 (1.7M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLM.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLM.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:37--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLM.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1770077 (1.7M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLM.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GLM.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:37--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GettingInfoBack.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 537279 (525K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GettingInfoBack.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GettingInfoBack.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:37--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GettingInfoBack.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 698936 (683K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GettingInfoBack.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GettingInfoBack.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:37--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GettingInfoBack.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 689212 (673K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GettingInfoBack.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GettingInfoBack.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:37--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GettingInfoBack.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 685648 (670K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GettingInfoBack.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GettingInfoBack.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:37--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GraphicsPipelineDataStructure.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3373763 (3.2M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GraphicsPipelineDataStructure.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GraphicsPipelineDataStructure.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:38--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GraphicsPipelineDataStructure.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2198613 (2.1M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GraphicsPipelineDataStructure.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GraphicsPipelineDataStructure.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:38--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GraphicsPipelineDataStructure.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1937564 (1.8M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GraphicsPipelineDataStructure.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GraphicsPipelineDataStructure.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:38--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GraphicsPipelineDataStructure.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1784801 (1.7M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GraphicsPipelineDataStructure.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/GraphicsPipelineDataStructure.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:38--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Instancing.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 705068 (689K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Instancing.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Instancing.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:38--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Instancing.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 867592 (847K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Instancing.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Instancing.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:38--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Instancing.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 860600 (840K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Instancing.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Instancing.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:38--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Instancing.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 855243 (835K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Instancing.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Instancing.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:39--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Intro.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2873855 (2.7M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Intro.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Intro.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:39--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Intro.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2517192 (2.4M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Intro.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Intro.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:39--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Intro.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2442838 (2.3M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Intro.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Intro.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:39--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Intro.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2376450 (2.3M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Intro.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Intro.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:39--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/LogicalDevices.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 670030 (654K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/LogicalDevices.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/LogicalDevices.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:39--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/LogicalDevices.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 784627 (766K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/LogicalDevices.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/LogicalDevices.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:40--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/LogicalDevices.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 761986 (744K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/LogicalDevices.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/LogicalDevices.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:40--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/LogicalDevices.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 743067 (726K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/LogicalDevices.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/LogicalDevices.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:40--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiPass.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 737891 (721K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiPass.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiPass.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:40--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiPass.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 385946 (377K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiPass.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiPass.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:40--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiPass.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 317458 (310K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiPass.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiPass.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:40--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiPass.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 261698 (256K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiPass.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiPass.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:41--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiSampling.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1416173 (1.3M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiSampling.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiSampling.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:41--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiSampling.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1165259 (1.1M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiSampling.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiSampling.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:41--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiSampling.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1152875 (1.1M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiSampling.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiSampling.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:41--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiSampling.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1085223 (1.0M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiSampling.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/MultiSampling.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:41--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/OpenglComputeShaders.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1695425 (1.6M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/OpenglComputeShaders.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/OpenglComputeShaders.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:41--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/OpenglComputeShaders.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1614251 (1.5M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/OpenglComputeShaders.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/OpenglComputeShaders.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:42--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/OpenglComputeShaders.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1576706 (1.5M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/OpenglComputeShaders.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/OpenglComputeShaders.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:42--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/OpenglComputeShaders.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1549016 (1.5M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/OpenglComputeShaders.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/OpenglComputeShaders.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:42--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PhysicalDevices.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 687022 (671K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PhysicalDevices.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PhysicalDevices.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:42--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PhysicalDevices.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 806791 (788K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PhysicalDevices.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PhysicalDevices.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:42--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PhysicalDevices.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 780262 (762K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PhysicalDevices.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PhysicalDevices.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:42--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PhysicalDevices.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 759220 (741K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PhysicalDevices.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PhysicalDevices.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:43--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PipelineBarriers.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1190883 (1.1M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PipelineBarriers.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PipelineBarriers.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:43--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PipelineBarriers.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 990354 (967K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PipelineBarriers.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PipelineBarriers.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:43--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PipelineBarriers.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 961773 (939K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PipelineBarriers.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PipelineBarriers.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:43--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PipelineBarriers.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 937878 (916K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PipelineBarriers.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PipelineBarriers.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:43--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Project.Notes.Vulkan.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 506263 (494K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Project.Notes.Vulkan.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Project.Notes.Vulkan.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:43--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Project.Notes.Vulkan.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 484810 (473K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Project.Notes.Vulkan.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Project.Notes.Vulkan.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:43--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Project.Notes.Vulkan.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 476122 (465K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Project.Notes.Vulkan.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Project.Notes.Vulkan.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:44--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Project.Notes.Vulkan.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 471403 (460K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Project.Notes.Vulkan.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Project.Notes.Vulkan.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:44--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PushConstants.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1361130 (1.3M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PushConstants.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PushConstants.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:44--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PushConstants.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1177162 (1.1M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PushConstants.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PushConstants.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:44--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PushConstants.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1137637 (1.1M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PushConstants.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PushConstants.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:44--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PushConstants.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1117444 (1.1M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PushConstants.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/PushConstants.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:45--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/QueuesAndCommandBuffers.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1186797 (1.1M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/QueuesAndCommandBuffers.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/QueuesAndCommandBuffers.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:45--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/QueuesAndCommandBuffers.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1074961 (1.0M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/QueuesAndCommandBuffers.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/QueuesAndCommandBuffers.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:45--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/QueuesAndCommandBuffers.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1039288 (1015K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/QueuesAndCommandBuffers.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/QueuesAndCommandBuffers.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:45--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/QueuesAndCommandBuffers.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1005337 (982K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/QueuesAndCommandBuffers.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/QueuesAndCommandBuffers.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:45--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTracePipeline.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 652117 (637K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTracePipeline.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTracePipeline.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:45--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTracePipeline.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 757164 (739K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTracePipeline.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTracePipeline.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:46--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTracePipeline.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 744512 (727K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTracePipeline.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTracePipeline.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:46--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTracePipeline.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 732240 (715K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTracePipeline.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTracePipeline.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:46--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTriangleIntersection.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 815073 (796K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTriangleIntersection.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTriangleIntersection.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:46--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTriangleIntersection.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 808051 (789K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTriangleIntersection.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTriangleIntersection.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:46--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTriangleIntersection.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 791161 (773K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTriangleIntersection.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTriangleIntersection.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:46--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTriangleIntersection.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 769542 (752K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTriangleIntersection.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/RayTriangleIntersection.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:47--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SampleCode.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1012476 (989K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SampleCode.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SampleCode.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:47--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SampleCode.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1008390 (985K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SampleCode.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SampleCode.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:47--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SampleCode.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 958674 (936K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SampleCode.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SampleCode.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:47--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SampleCode.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 931255 (909K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SampleCode.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SampleCode.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:47--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ShadersAndSpirv.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1473452 (1.4M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ShadersAndSpirv.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ShadersAndSpirv.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:47--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ShadersAndSpirv.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1218809 (1.2M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ShadersAndSpirv.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ShadersAndSpirv.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:48--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ShadersAndSpirv.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1146147 (1.1M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ShadersAndSpirv.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ShadersAndSpirv.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:48--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ShadersAndSpirv.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1108353 (1.1M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ShadersAndSpirv.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/ShadersAndSpirv.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:48--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SpecializationConstants.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 696856 (681K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SpecializationConstants.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SpecializationConstants.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:48--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SpecializationConstants.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 822910 (804K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SpecializationConstants.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SpecializationConstants.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:48--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SpecializationConstants.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 806050 (787K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SpecializationConstants.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SpecializationConstants.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:48--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SpecializationConstants.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 793022 (774K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SpecializationConstants.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SpecializationConstants.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:48--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SwapChain.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1299656 (1.2M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SwapChain.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SwapChain.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:49--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SwapChain.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1110319 (1.1M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SwapChain.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SwapChain.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:49--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SwapChain.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1068999 (1.0M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SwapChain.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SwapChain.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:49--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SwapChain.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1044177 (1020K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SwapChain.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/SwapChain.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:49--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Synchronization.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 987712 (965K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Synchronization.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Synchronization.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:49--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Synchronization.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 929922 (908K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Synchronization.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Synchronization.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:49--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Synchronization.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 908827 (888K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Synchronization.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Synchronization.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:49--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Synchronization.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 891711 (871K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Synchronization.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Synchronization.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:50--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Textures.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2177852 (2.1M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Textures.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Textures.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:50--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Textures.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2036256 (1.9M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Textures.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Textures.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:50--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Textures.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1735191 (1.7M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Textures.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Textures.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:50--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Textures.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1713410 (1.6M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Textures.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/Textures.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:50--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VMA.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 630972 (616K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VMA.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VMA.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:51--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VMA.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 793938 (775K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VMA.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VMA.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:51--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VMA.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 781358 (763K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VMA.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VMA.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:51--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VMA.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 774568 (756K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VMA.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VMA.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:51--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VertexBuffers.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1413397 (1.3M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VertexBuffers.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VertexBuffers.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:51--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VertexBuffers.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1291633 (1.2M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VertexBuffers.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VertexBuffers.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:51--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VertexBuffers.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1257376 (1.2M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VertexBuffers.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VertexBuffers.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:52--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VertexBuffers.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1231453 (1.2M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VertexBuffers.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VertexBuffers.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:52--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VulkanRayTracing.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2097845 (2.0M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VulkanRayTracing.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VulkanRayTracing.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:52--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VulkanRayTracing.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1492695 (1.4M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VulkanRayTracing.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VulkanRayTracing.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:52--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VulkanRayTracing.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1394230 (1.3M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VulkanRayTracing.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VulkanRayTracing.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:52--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VulkanRayTracing.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1297751 (1.2M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VulkanRayTracing.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/VulkanRayTracing.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:52--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/keytime.1pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 518979 (507K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/keytime.1pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/keytime.1pp.pdf’ (Not a directory).
+--2026-05-28 15:07:52--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/keytime.2pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 461198 (450K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/keytime.2pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/keytime.2pp.pdf’ (Not a directory).
+--2026-05-28 15:07:53--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/keytime.4pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 448904 (438K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/keytime.4pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/keytime.4pp.pdf’ (Not a directory).
+--2026-05-28 15:07:53--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/keytime.6pp.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 440063 (430K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/keytime.6pp.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/keytime.6pp.pdf’ (Not a directory).
+--2026-05-28 15:07:53--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/manual.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1466032 (1.4M) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/manual.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/manual.pdf’ (Not a directory).
+--2026-05-28 15:07:53--  https://web.engr.oregonstate.edu/~mjb/vulkan/Handouts/moreinfo.pdf
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 548691 (536K) [application/pdf]
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts: Not a directory
+mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/moreinfo.pdf: Not a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/vulkan/Handouts/moreinfo.pdf’ (Not a directory).
+--2026-05-28 15:07:53--  https://web.engr.oregonstate.edu/~mjb/webgl
+Connecting to web.engr.oregonstate.edu (web.engr.oregonstate.edu)|128.193.40.12|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://web.engr.oregonstate.edu/~mjb/webgl/ [following]
+--2026-05-28 15:07:53--  https://web.engr.oregonstate.edu/~mjb/webgl/
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1885 (1.8K) [text/html]
+Saving to: ‘mirror/web.engr.oregonstate.edu/~mjb/webgl’
+
+     0K .                                                     100% 7.05M=0s
+
+2026-05-28 15:07:54 (7.05 MB/s) - ‘mirror/web.engr.oregonstate.edu/~mjb/webgl’ saved [1885/1885]
+
+--2026-05-28 15:07:54--  https://web.engr.oregonstate.edu/~mjb/whirlwind
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://web.engr.oregonstate.edu/~mjb/whirlwind/ [following]
+--2026-05-28 15:07:54--  https://web.engr.oregonstate.edu/~mjb/whirlwind/
+Reusing existing connection to web.engr.oregonstate.edu:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 8634 (8.4K) [text/html]
+mirror/web.engr.oregonstate.edu/~mjb/whirlwind: Is a directory
+
+Cannot write to ‘mirror/web.engr.oregonstate.edu/~mjb/whirlwind’ (Is a directory).
+FINISHED --2026-05-28 15:07:54--
+Total wall clock time: 31s
+Downloaded: 17 files, 186K in 0.1s (1.34 MB/s)
