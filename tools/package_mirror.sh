@@ -2,4 +2,4 @@
 set -euo pipefail
 
 mkdir -p dist
-zip -9 -r dist/mirror.zip mirror
+zip -9 -q -r dist/mirror.zip mirror
