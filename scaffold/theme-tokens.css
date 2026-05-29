@@ -67,8 +67,8 @@ html[data-theme="dark"] {
 html[data-theme="cyber"] {
   color-scheme: dark;
 
-  --font-display: "Fraunces", Georgia, serif;
-  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+  --font-display: "Orbitron", "Segoe UI", sans-serif;
+  --font-body: "Rajdhani", "Segoe UI", sans-serif;
 
   --page-bg:
     radial-gradient(980px 620px at 100% 0%, rgba(0, 255, 204, 0.16) 0%, transparent 45%),

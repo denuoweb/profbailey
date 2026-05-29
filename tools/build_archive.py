@@ -452,6 +452,12 @@ def write_assets() -> None:
     tokens = tokens.replace('"Source Sans 3", "Segoe UI", sans-serif', '"Segoe UI", Roboto, Helvetica, Arial, sans-serif')
     (ASSETS / "theme-tokens.css").write_text(tokens, encoding="utf-8")
     shutil.copy2(SCAFFOLD / "theme-toggle.js", ASSETS / "theme-toggle.js")
+    if (SCAFFOLD / "fonts").exists():
+        font_assets = ASSETS / "fonts"
+        font_assets.mkdir(parents=True, exist_ok=True)
+        for font_path in (SCAFFOLD / "fonts").glob("*"):
+            if font_path.suffix.lower() in {".ttf", ".woff", ".woff2"}:
+                shutil.copy2(font_path, font_assets / font_path.name)
 
     base_css = (SCAFFOLD / "theme-showcase.css").read_text(encoding="utf-8")
     base_css = re.sub(r'@import url\("[^"]+"\);\s*', "", base_css)
