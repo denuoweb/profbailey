@@ -70,6 +70,7 @@ python3 tools/build_archive.py
 python3 tools/build_hosting_site.py
 gcloud storage rsync -r archive gs://profbailey-archive-assets
 gcloud storage buckets add-iam-policy-binding gs://profbailey-archive-assets --member=allUsers --role=roles/storage.objectViewer
+gcloud storage objects update 'gs://profbailey-archive-assets/**' --cache-control='public,max-age=31536000,immutable'
 firebase deploy --project profbailey --only hosting
 ```
 
@@ -79,7 +80,31 @@ Package the raw mirror and upload it to the public mirror bucket:
 tools/package_mirror.sh
 gcloud storage cp dist/mirror.zip gs://profbailey-mirror/mirror.zip
 gcloud storage buckets add-iam-policy-binding gs://profbailey-mirror --member=allUsers --role=roles/storage.objectViewer
+gcloud storage objects update 'gs://profbailey-mirror/**' --cache-control='public,max-age=31536000,immutable'
 ```
+
+The Firebase Hosting config sends `X-Robots-Tag: noindex, nofollow, noarchive` and the generated archive includes `robots.txt` with `Disallow: /`. These reduce compliant crawler indexing. They do not make content private.
+
+## Private Storage
+
+To make the Cloud Storage buckets private and non-anonymous, remove public IAM and enforce public access prevention:
+
+```bash
+gcloud storage buckets remove-iam-policy-binding gs://profbailey-archive-assets --member=allUsers --role=roles/storage.objectViewer
+gcloud storage buckets remove-iam-policy-binding gs://profbailey-mirror --member=allUsers --role=roles/storage.objectViewer
+gcloud storage buckets update gs://profbailey-archive-assets --public-access-prevention=enforced
+gcloud storage buckets update gs://profbailey-mirror --public-access-prevention=enforced
+```
+
+Doing this will break the current public `https://storage.googleapis.com/...` archive links. To keep downloads available without anonymous access, put the asset delivery behind an authenticated path, such as an IAP-protected Cloud Run download proxy, Firebase Auth plus signed short-lived URLs, or another authenticated CDN/proxy. Plain Firebase Hosting and direct public Cloud Storage URLs are public surfaces.
+
+## Web Surface
+
+Known script and frame exceptions for security headers:
+
+- WebGL sample page: `webgl/sample.html` loads local `WebGL/Webgl-Utils.js`, `WebGL/InitShaders.js`, `WebGL/GlMatrix.js`, `webgl/sampledata.js`, and `webgl/sample.js`.
+- Theme script: every themed HTML page loads local `assets/theme-toggle.js`.
+- Third-party iframe: `cs550/lookingglassquilts.html` embeds two `https://blocks.glass/embed/...` frames. These are allowed by CSP `frame-src`; all iframes are generated with lazy loading, strict referrer policy, and a sandbox.
 
 Cloud Storage buckets:
 

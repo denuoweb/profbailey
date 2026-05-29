@@ -75,6 +75,25 @@ def is_skippable_url(value: str) -> bool:
     )
 
 
+def is_blank_target(value: str) -> bool:
+    return value.strip().strip("\"'").lower() == "_blank"
+
+
+def harden_external_surface(node: html.HtmlElement) -> None:
+    tag = node.tag.lower()
+    if tag == "a" and is_blank_target(node.attrib.get("target", "")):
+        rel_tokens = set(node.attrib.get("rel", "").split())
+        rel_tokens.update({"noopener", "noreferrer"})
+        node.attrib["rel"] = " ".join(sorted(rel_tokens))
+    elif tag == "iframe":
+        if "loading" not in node.attrib:
+            node.attrib["loading"] = "lazy"
+        if "referrerpolicy" not in node.attrib:
+            node.attrib["referrerpolicy"] = "strict-origin-when-cross-origin"
+        if "sandbox" not in node.attrib:
+            node.attrib["sandbox"] = "allow-scripts allow-same-origin allow-presentation allow-popups"
+
+
 def bucket_url(rel: PurePosixPath, query: str = "", fragment: str = "") -> str:
     url = ASSET_BUCKET_URL + quote(rel.as_posix(), safe="/")
     if query:
@@ -154,6 +173,7 @@ def rewrite_html_file(path: Path, hosted: set[PurePosixPath]) -> None:
         if not isinstance(node.tag, str):
             continue
         tag = node.tag.lower()
+        harden_external_surface(node)
         for attr in URL_ATTRS.get(tag, ()):
             if attr in node.attrib:
                 node.attrib[attr] = rewrite_url(node.attrib[attr], source_rel, hosted)

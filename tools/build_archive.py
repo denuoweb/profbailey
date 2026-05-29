@@ -142,6 +142,25 @@ def is_skippable_url(value: str) -> bool:
     )
 
 
+def is_blank_target(value: str) -> bool:
+    return value.strip().strip("\"'").lower() == "_blank"
+
+
+def harden_external_surface(node: etree._Element) -> None:
+    tag = node.tag.lower()
+    if tag == "a" and is_blank_target(node.attrib.get("target", "")):
+        rel_tokens = set(node.attrib.get("rel", "").split())
+        rel_tokens.update({"noopener", "noreferrer"})
+        node.attrib["rel"] = " ".join(sorted(rel_tokens))
+    elif tag == "iframe":
+        if "loading" not in node.attrib:
+            node.attrib["loading"] = "lazy"
+        if "referrerpolicy" not in node.attrib:
+            node.attrib["referrerpolicy"] = "strict-origin-when-cross-origin"
+        if "sandbox" not in node.attrib:
+            node.attrib["sandbox"] = "allow-scripts allow-same-origin allow-presentation allow-popups"
+
+
 def normalize_local_abs_path(parts: SplitResult) -> PurePosixPath | None:
     host = parts.netloc.lower()
     if host not in LOCAL_HOSTS:
@@ -246,6 +265,8 @@ def clean_and_rewrite_tree(body: etree._Element, source_path: Path, output_path:
     for node in body.iter():
         if not isinstance(node.tag, str):
             continue
+
+        harden_external_surface(node)
 
         for attr in URL_ATTRS.get(node.tag.lower(), ()):
             if attr in node.attrib:
@@ -406,6 +427,7 @@ def render_page(source_path: Path, output_path: Path, *, home_index: bool = Fals
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Mirrored offsite archive of {escaped_title}.">
+  <meta name="robots" content="noindex,nofollow,noarchive">
   <title>{escaped_title} | Bailey Mirrored Offsite Archive</title>
   <link rel="stylesheet" href="{rel_asset(output_path, "theme-tokens.css")}">
   <link rel="stylesheet" href="{rel_asset(output_path, "archive.css")}">
@@ -666,6 +688,13 @@ a:not([href]):focus-visible {
     (ASSETS / "archive.css").write_text(archive_css, encoding="utf-8")
 
 
+def write_robots() -> None:
+    (OUT / "robots.txt").write_text(
+        "User-agent: *\nDisallow: /\n",
+        encoding="utf-8",
+    )
+
+
 TEXT_LOCAL_URL_RE = re.compile(
     r"https?://(?:web\.engr\.oregonstate\.edu|cs\.oregonstate\.edu|eecs\.oregonstate\.edu)/~mjb/[^\s\"'<>)]*",
     re.I,
@@ -717,6 +746,7 @@ def main() -> None:
         raise SystemExit(f"Missing mirror root: {ROOT}")
     copy_mirror()
     write_assets()
+    write_robots()
 
     generated: list[Path] = []
     sources = html_files()
