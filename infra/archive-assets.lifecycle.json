@@ -1,0 +1,53 @@
+{
+  "lifecycle": {
+    "rule": [
+      {
+        "action": {
+          "type": "SetStorageClass",
+          "storageClass": "NEARLINE"
+        },
+        "condition": {
+          "age": 30,
+          "matchesStorageClass": [
+            "STANDARD",
+            "REGIONAL"
+          ],
+          "matchesSuffix": [
+            ".avi",
+            ".blend",
+            ".data",
+            ".gz",
+            ".mp4",
+            ".obj",
+            ".tar",
+            ".tex",
+            ".zip"
+          ]
+        }
+      },
+      {
+        "action": {
+          "type": "SetStorageClass",
+          "storageClass": "COLDLINE"
+        },
+        "condition": {
+          "age": 90,
+          "matchesStorageClass": [
+            "NEARLINE"
+          ],
+          "matchesSuffix": [
+            ".avi",
+            ".blend",
+            ".data",
+            ".gz",
+            ".mp4",
+            ".obj",
+            ".tar",
+            ".tex",
+            ".zip"
+          ]
+        }
+      }
+    ]
+  }
+}

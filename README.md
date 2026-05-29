@@ -30,6 +30,9 @@ The archive home page adds a mirrored-offsite objective and course index above t
 - `tools/build_archive.py` - rebuilds `archive/` from `mirror/` and the scaffold files.
 - `tools/build_hosting_site.py` - builds the lightweight Firebase Hosting directory from `archive/`.
 - `tools/package_mirror.sh` - creates `dist/mirror.zip` with maximum ZIP compression for bucket upload.
+- `tools/apply_cloud_config.sh` - applies repeatable Cloud Storage cache, storage-class, lifecycle, and public/private access policy.
+- `tools/disable_unused_services.sh` - disables Google Cloud APIs that are not used by this static archive after basic resource checks.
+- `infra/` - versioned Cloud Storage lifecycle policy files.
 - `firebase.json` and `.firebaserc` - Firebase Hosting configuration for project `profbailey`.
 - `logs/` - fetch logs and final link-audit reports.
 - `scaffold/` - unpacked source theme from `theme-showcase.zip`.
@@ -70,7 +73,7 @@ python3 tools/build_archive.py
 python3 tools/build_hosting_site.py
 gcloud storage rsync -r archive gs://profbailey-archive-assets
 gcloud storage buckets add-iam-policy-binding gs://profbailey-archive-assets --member=allUsers --role=roles/storage.objectViewer
-gcloud storage objects update 'gs://profbailey-archive-assets/**' --cache-control='public,max-age=31536000,immutable'
+tools/apply_cloud_config.sh
 firebase deploy --project profbailey --only hosting
 ```
 
@@ -80,7 +83,7 @@ Package the raw mirror and upload it to the public mirror bucket:
 tools/package_mirror.sh
 gcloud storage cp dist/mirror.zip gs://profbailey-mirror/mirror.zip
 gcloud storage buckets add-iam-policy-binding gs://profbailey-mirror --member=allUsers --role=roles/storage.objectViewer
-gcloud storage objects update 'gs://profbailey-mirror/**' --cache-control='public,max-age=31536000,immutable'
+tools/apply_cloud_config.sh
 ```
 
 The Firebase Hosting config sends `X-Robots-Tag: noindex, nofollow, noarchive` and the generated archive includes `robots.txt` with `Disallow: /`. These reduce compliant crawler indexing. They do not make content private.
@@ -98,11 +101,35 @@ gcloud storage buckets update gs://profbailey-mirror --public-access-prevention=
 
 Doing this will break the current public `https://storage.googleapis.com/...` archive links. To keep downloads available without anonymous access, put the asset delivery behind an authenticated path, such as an IAP-protected Cloud Run download proxy, Firebase Auth plus signed short-lived URLs, or another authenticated CDN/proxy. Plain Firebase Hosting and direct public Cloud Storage URLs are public surfaces.
 
+The same bucket policy script can enforce private storage once an authenticated delivery path exists:
+
+```bash
+PRIVATE_STORAGE=1 tools/apply_cloud_config.sh
+```
+
+## Cloud Surface
+
+Repeatable infrastructure commands:
+
+```bash
+tools/apply_cloud_config.sh
+tools/disable_unused_services.sh
+```
+
+Storage policy:
+
+- `gs://profbailey-archive-assets` stays Standard by default for frequently used class material.
+- Large/cold suffixes such as videos, archives, object files, blend files, and data files move to Nearline after 30 days and Coldline after 90 days.
+- `gs://profbailey-mirror` uses Archive storage by default, and `mirror.zip` is set to Archive because it is a cold backup package.
+
+The service disable script keeps this project scoped to Firebase Hosting, Cloud Storage, Firebase management, Resource Manager, Logging, Monitoring, Service Usage, and required Google-managed services. It checks for Firebase apps, BigQuery datasets, and Pub/Sub resources before disabling the unused API set. Some core services, including `bigquery.googleapis.com`, `cloudtrace.googleapis.com`, `datastore.googleapis.com`, and `sql-component.googleapis.com`, are intentionally not forced off because Service Usage reports `cloudapis.googleapis.com` as a dependent service; the BigQuery companion APIs are disabled when unused.
+
 ## Web Surface
 
 Known script and frame exceptions for security headers:
 
 - WebGL sample page: `webgl/sample.html` loads local `WebGL/Webgl-Utils.js`, `WebGL/InitShaders.js`, `WebGL/GlMatrix.js`, `webgl/sampledata.js`, and `webgl/sample.js`.
+- WebGL helper scripts: `webgl/sample-shaders.js` and `webgl/sample-ui.js` replace the original inline shader and jQuery UI setup so CSP can use `script-src 'self'`.
 - Theme script: every themed HTML page loads local `assets/theme-toggle.js`.
 - Third-party iframe: `cs550/lookingglassquilts.html` embeds two `https://blocks.glass/embed/...` frames. These are allowed by CSP `frame-src`; all iframes are generated with lazy loading, strict referrer policy, and a sandbox.
 

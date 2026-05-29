@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import html as html_escape
+import json
 import os
 import posixpath
 import re
@@ -22,6 +23,7 @@ ARCHIVE_DATE = "May 28, 2026"
 PUBLIC_ARCHIVE_URL = "https://profbailey.web.app/"
 GITHUB_URL = "https://github.com/denuoweb/profbailey"
 MIRROR_DOWNLOAD_URL = "https://storage.googleapis.com/profbailey-mirror/mirror.zip"
+WEBGL_SAMPLE = PurePosixPath("webgl/sample.html")
 
 COURSES = [
     ("cs491", "CS 491", "CS Skills for Simulation and Game Programming"),
@@ -161,6 +163,37 @@ def harden_external_surface(node: etree._Element) -> None:
             node.attrib["sandbox"] = "allow-scripts allow-same-origin allow-presentation allow-popups"
 
 
+def externalize_webgl_sample_scripts(body: etree._Element, source_path: Path, output_path: Path) -> None:
+    if root_relative(source_path) != WEBGL_SAMPLE:
+        return
+
+    for script in list(body.iter("script")):
+        if "src" not in script.attrib:
+            script.drop_tree()
+
+    first_script = body.find(".//script[@src]")
+    helper_scripts = ("sample-shaders.js", "sample-ui.js")
+    new_nodes = []
+    for name in helper_scripts:
+        node = etree.Element("script")
+        node.attrib["src"] = to_archive_rel(PurePosixPath("webgl") / name, output_path)
+        new_nodes.append(node)
+
+    if first_script is None:
+        body.extend(new_nodes)
+        return
+
+    parent = first_script.getparent()
+    if parent is None:
+        body.extend(new_nodes)
+        return
+
+    index = parent.index(first_script)
+    for node in new_nodes:
+        parent.insert(index, node)
+        index += 1
+
+
 def normalize_local_abs_path(parts: SplitResult) -> PurePosixPath | None:
     host = parts.netloc.lower()
     if host not in LOCAL_HOSTS:
@@ -284,6 +317,8 @@ def clean_and_rewrite_tree(body: etree._Element, source_path: Path, output_path:
                 node.attrib["style"] = style
             else:
                 del node.attrib["style"]
+
+    externalize_webgl_sample_scripts(body, source_path, output_path)
 
 
 def parse_source(source_path: Path) -> tuple[str, str]:
@@ -665,6 +700,10 @@ a:not([href]):focus-visible {
   white-space: pre-wrap;
 }
 
+.legacy-webgl-slider {
+  width: min(26rem, 100%);
+}
+
 @media (max-width: 900px) {
   .course-grid {
     grid-template-columns: 1fr;
@@ -686,6 +725,122 @@ a:not([href]):focus-visible {
 }
 """
     (ASSETS / "archive.css").write_text(archive_css, encoding="utf-8")
+
+
+def write_webgl_helpers() -> None:
+    sample_source = ROOT / WEBGL_SAMPLE.as_posix()
+    if not sample_source.exists():
+        return
+
+    parser = html.HTMLParser(encoding="utf-8")
+    document = html.parse(str(sample_source), parser).getroot()
+    shaders = {}
+    for shader_id in ("vertex-shader", "fragment-shader"):
+        node = document.find(f".//script[@id='{shader_id}']")
+        if node is not None and node.text:
+            shaders[shader_id] = {
+                "type": node.attrib.get("type", "text/plain"),
+                "source": node.text,
+            }
+
+    webgl_dir = OUT / "webgl"
+    webgl_dir.mkdir(parents=True, exist_ok=True)
+    (webgl_dir / "sample-shaders.js").write_text(
+        f"""(() => {{
+  const shaders = {json.dumps(shaders, indent=2)};
+  Object.entries(shaders).forEach(([id, shader]) => {{
+    if (document.getElementById(id)) {{
+      return;
+    }}
+    const node = document.createElement("script");
+    node.id = id;
+    node.type = shader.type;
+    node.textContent = shader.source;
+    document.head.append(node);
+  }});
+}})();
+""",
+        encoding="utf-8",
+    )
+    (webgl_dir / "sample-ui.js").write_text(
+        """(() => {
+  const defaults = {
+    min: 0.1,
+    max: 2.0,
+    value: 1.0,
+    step: 0.01,
+    orientation: "horizontal",
+  };
+  const stateByElement = new WeakMap();
+
+  const ensureSlider = (element) => {
+    let state = stateByElement.get(element);
+    if (state) {
+      return state;
+    }
+
+    const input = document.createElement("input");
+    input.type = "range";
+    input.className = "legacy-webgl-slider";
+    input.min = String(defaults.min);
+    input.max = String(defaults.max);
+    input.step = String(defaults.step);
+    input.value = String(defaults.value);
+    element.replaceChildren(input);
+
+    state = {
+      input,
+      options: { ...defaults },
+    };
+    stateByElement.set(element, state);
+    return state;
+  };
+
+  const apiFor = (element) => ({
+    slider(command, key, value) {
+      const state = ensureSlider(element);
+
+      if (command === "value") {
+        return Number(state.input.value);
+      }
+
+      if (command === "enable") {
+        state.input.disabled = false;
+        return this;
+      }
+
+      if (command === "option") {
+        state.options[key] = value;
+        if (key === "min" || key === "max" || key === "step" || key === "value") {
+          state.input[key] = String(value);
+        }
+        return this;
+      }
+
+      return this;
+    },
+  });
+
+  window.$ = window.$ || ((selector) => {
+    const element = typeof selector === "string" ? document.querySelector(selector) : selector;
+    if (!element) {
+      return { slider: () => undefined };
+    }
+    return apiFor(element);
+  });
+
+  const slider = window.$("#slider");
+  slider.slider();
+  slider.slider("option", "min", defaults.min);
+  slider.slider("option", "max", defaults.max);
+  slider.slider("option", "value", defaults.value);
+  slider.slider("option", "step", defaults.step);
+  slider.slider("option", "orientation", defaults.orientation);
+  slider.slider("enable");
+})();
+""",
+        encoding="utf-8",
+    )
 
 
 def write_robots() -> None:
@@ -746,6 +901,7 @@ def main() -> None:
         raise SystemExit(f"Missing mirror root: {ROOT}")
     copy_mirror()
     write_assets()
+    write_webgl_helpers()
     write_robots()
 
     generated: list[Path] = []
