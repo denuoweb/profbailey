@@ -1,11 +1,33 @@
 {
   "hosting": {
     "site": "profbailey",
-    "public": "archive",
+    "public": "hosting",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/glman",
+        "destination": "/glman/index.html",
+        "type": 301
+      },
+      {
+        "source": "/gamemaker",
+        "destination": "/gamemaker/index.html",
+        "type": 301
+      },
+      {
+        "source": "/cgeducation/ShadersBookSecond",
+        "destination": "/cgeducation/ShadersBookSecond/index.html",
+        "type": 301
+      },
+      {
+        "source": "/cs519",
+        "destination": "/cs519/index.html",
+        "type": 301
+      }
     ],
     "headers": [
       {

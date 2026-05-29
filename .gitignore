@@ -1,5 +1,6 @@
-# Generated archive content is deployed to Firebase Hosting, not Git.
+# Generated archive content is deployed to Firebase/Cloud Storage, not Git.
 /archive/
+/hosting/
 
 # Raw mirrored source content is too large for GitHub.
 /mirror/

@@ -67,11 +67,23 @@ PRESENTATION_ATTRS = {
 }
 
 
+def looks_like_html(path: Path) -> bool:
+    if path.suffix.lower() in {".html", ".htm"}:
+        return True
+    if path.suffix:
+        return False
+    try:
+        sample = path.read_bytes()[:8192].decode("utf-8", errors="ignore").lower()
+    except OSError:
+        return False
+    return any(marker in sample for marker in ("<!doctype html", "<html", "<head", "<body", "<title"))
+
+
 def html_files() -> list[Path]:
     return sorted(
         path
         for path in ROOT.rglob("*")
-        if path.is_file() and path.suffix.lower() in {".html", ".htm"}
+        if path.is_file() and looks_like_html(path)
     )
 
 
@@ -362,12 +374,22 @@ def current_course_for(source_path: Path) -> str | None:
     return None
 
 
+def source_url_for(source_path: Path) -> str:
+    rel = root_relative(source_path)
+    if rel.name.lower() == "index.html":
+        parent = rel.parent.as_posix()
+        if parent == ".":
+            return SOURCE_BASE
+        return SOURCE_BASE + parent + "/"
+    return SOURCE_BASE + rel.as_posix()
+
+
 def render_page(source_path: Path, output_path: Path, *, home_index: bool = False) -> None:
     title, body = parse_source(source_path)
     clean_and_rewrite_tree(body, source_path, output_path)
     content = body_inner_html(body)
     escaped_title = html_escape.escape(title)
-    source_url = SOURCE_BASE + root_relative(source_path).as_posix()
+    source_url = source_url_for(source_path)
     home = home_index
     current_course = None if home else current_course_for(source_path)
     intro = archive_intro(output_path) if home_index else ""
@@ -638,6 +660,31 @@ a:not([href]):focus-visible {
     (ASSETS / "archive.css").write_text(archive_css, encoding="utf-8")
 
 
+TEXT_LOCAL_URL_RE = re.compile(
+    r"https?://(?:web\.engr\.oregonstate\.edu|cs\.oregonstate\.edu|eecs\.oregonstate\.edu)/~mjb/[^\s\"'<>)]*",
+    re.I,
+)
+
+
+def rewrite_text_asset_urls() -> None:
+    for path in OUT.rglob("*"):
+        if not path.is_file() or path.suffix.lower() not in {".css", ".js"}:
+            continue
+        try:
+            text = path.read_text(encoding="utf-8")
+        except UnicodeDecodeError:
+            continue
+
+        source_equivalent = ROOT / path.relative_to(OUT)
+
+        def replace_url(match: re.Match[str]) -> str:
+            return rewrite_one_url(match.group(0), source_equivalent, path)
+
+        rewritten = TEXT_LOCAL_URL_RE.sub(replace_url, text)
+        if rewritten != text:
+            path.write_text(rewritten, encoding="utf-8")
+
+
 def copy_mirror() -> None:
     if OUT.exists():
         shutil.rmtree(OUT)
@@ -675,6 +722,7 @@ def main() -> None:
     home_source = ROOT / "WebMjb/mjb.html"
     render_page(home_source, OUT / "index.html", home_index=True)
     generated.append(OUT / "index.html")
+    rewrite_text_asset_urls()
     write_manifest(generated)
     print(f"Generated {len(generated)} themed HTML pages in {OUT}")
 
