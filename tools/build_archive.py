@@ -482,7 +482,6 @@ def render_page(source_path: Path, output_path: Path, *, home_index: bool = Fals
 
     <header class="showcase-section archive-title">
       <p class="eyebrow">Mirrored Offsite Archive</p>
-      <h1>{escaped_title}</h1>
       <p class="lede">
         Archived from <a href="{escaped_source_note}" target="_blank" rel="noopener">{escaped_source_note}</a> on {ARCHIVE_DATE}.
         Project source: <a href="{escaped_github_url}" target="_blank" rel="noopener">GitHub</a>.
