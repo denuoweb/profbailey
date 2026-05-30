@@ -22,7 +22,6 @@ SOURCE_BASE = "https://web.engr.oregonstate.edu/~mjb/"
 ARCHIVE_DATE = "May 28, 2026"
 PUBLIC_ARCHIVE_URL = "https://profbailey.web.app/"
 GITHUB_URL = "https://github.com/denuoweb/profbailey"
-MIRROR_DOWNLOAD_URL = "https://storage.googleapis.com/profbailey-mirror/mirror.zip"
 WEBGL_SAMPLE = PurePosixPath("webgl/sample.html")
 
 COURSES = [
@@ -523,11 +522,6 @@ def archive_intro(output_path: Path) -> str:
         COE's notice says COE-hosted public_html / LAMP content will no longer be publicly accessible from the internet
         beginning Monday, June 26, 2028. This archive was generated from the public source pages on {ARCHIVE_DATE}.
       </p>
-      <p class="archive-links">
-        <a href="{html_escape.escape(GITHUB_URL)}" target="_blank" rel="noopener noreferrer">GitHub repository</a>
-        <a href="{html_escape.escape(PUBLIC_ARCHIVE_URL)}" target="_blank" rel="noopener noreferrer">Public archive</a>
-        <a href="{html_escape.escape(MIRROR_DOWNLOAD_URL)}" target="_blank" rel="noopener noreferrer">Raw mirror ZIP</a>
-      </p>
       <div class="course-grid" aria-label="Archived classes">
         {"".join(course_items)}
       </div>
@@ -867,25 +861,6 @@ h3 {
   font: 700 0.95rem/1 var(--font-body);
   text-align: left;
   cursor: pointer;
-}
-
-.archive-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-  margin-top: 1rem;
-}
-
-.archive-links a {
-  min-height: 44px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem 0.85rem;
-  border: 1px solid var(--border-color);
-  border-radius: 999px;
-  background: var(--surface-2);
-  font-weight: 700;
 }
 
 .archive-objective,

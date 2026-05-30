@@ -26,10 +26,10 @@ The archive home page adds a mirrored-offsite objective and course index above t
 - `hosting/` - generated Firebase Hosting payload, currently 1,008 files / 49 MB. It keeps HTML, theme files, local Cyber fonts, and small assets on `profbailey.web.app`; larger archive assets are linked from Cloud Storage. This is ignored by Git.
 - `archive/index.html` - generated home page and main entry point.
 - `archive/MANIFEST.md` - generated list of themed HTML pages.
-- `mirror/` - raw Wget mirror used as generator input. This is ignored by Git and can be packaged for object storage.
+- `mirror/` - raw Wget mirror used as generator input. This is ignored by Git and can be packaged locally for backup.
 - `tools/build_archive.py` - rebuilds `archive/` from `mirror/` and the scaffold files.
 - `tools/build_hosting_site.py` - builds the lightweight Firebase Hosting directory from `archive/`.
-- `tools/package_mirror.sh` - creates `dist/mirror.zip` with maximum ZIP compression for bucket upload.
+- `tools/package_mirror.sh` - creates local `dist/mirror.zip` with maximum ZIP compression.
 - `tools/apply_cloud_config.sh` - applies repeatable Cloud Storage cache, storage-class, lifecycle, and public/private access policy.
 - `tools/disable_unused_services.sh` - disables Google Cloud APIs that are not used by this static archive after basic resource checks.
 - `infra/` - versioned Cloud Storage lifecycle policy files.
@@ -77,14 +77,13 @@ tools/apply_cloud_config.sh
 firebase deploy --project profbailey --only hosting
 ```
 
-Package the raw mirror and upload it to the public mirror bucket:
+Package the raw mirror for local backup only:
 
 ```bash
 tools/package_mirror.sh
-gcloud storage cp dist/mirror.zip gs://profbailey-mirror/mirror.zip
-gcloud storage buckets add-iam-policy-binding gs://profbailey-mirror --member=allUsers --role=roles/storage.objectViewer
-tools/apply_cloud_config.sh
 ```
+
+The raw mirror ZIP is intentionally not uploaded to public Cloud Storage or linked from the site.
 
 The Firebase Hosting config sends `X-Robots-Tag: noindex, nofollow, noarchive` and the generated archive includes `robots.txt` with `Disallow: /`. These reduce compliant crawler indexing. They do not make content private.
 
@@ -94,9 +93,7 @@ To make the Cloud Storage buckets private and non-anonymous, remove public IAM a
 
 ```bash
 gcloud storage buckets remove-iam-policy-binding gs://profbailey-archive-assets --member=allUsers --role=roles/storage.objectViewer
-gcloud storage buckets remove-iam-policy-binding gs://profbailey-mirror --member=allUsers --role=roles/storage.objectViewer
 gcloud storage buckets update gs://profbailey-archive-assets --public-access-prevention=enforced
-gcloud storage buckets update gs://profbailey-mirror --public-access-prevention=enforced
 ```
 
 Doing this will break the current public `https://storage.googleapis.com/...` archive links. To keep downloads available without anonymous access, put the asset delivery behind an authenticated path, such as an IAP-protected Cloud Run download proxy, Firebase Auth plus signed short-lived URLs, or another authenticated CDN/proxy. Plain Firebase Hosting and direct public Cloud Storage URLs are public surfaces.
@@ -120,7 +117,6 @@ Storage policy:
 
 - `gs://profbailey-archive-assets` stays Standard by default for frequently used class material.
 - Large/cold suffixes such as videos, archives, object files, blend files, and data files move to Nearline after 30 days and Coldline after 90 days.
-- `gs://profbailey-mirror` uses Archive storage by default, and `mirror.zip` is set to Archive because it is a cold backup package.
 
 The service disable script keeps this project scoped to Firebase Hosting, Cloud Storage, Firebase management, Resource Manager, Logging, Monitoring, Service Usage, and required Google-managed services. It checks for Firebase apps, BigQuery datasets, and Pub/Sub resources before disabling the unused API set. Some core services, including `bigquery.googleapis.com`, `cloudtrace.googleapis.com`, `datastore.googleapis.com`, and `sql-component.googleapis.com`, are intentionally not forced off because Service Usage reports `cloudapis.googleapis.com` as a dependent service; the BigQuery companion APIs are disabled when unused.
 
@@ -136,13 +132,6 @@ Known script and frame exceptions for security headers:
 Cloud Storage buckets:
 
 - `gs://profbailey-archive-assets`
-- `gs://profbailey-mirror`
-
-Mirror ZIP URL:
-
-```text
-https://storage.googleapis.com/profbailey-mirror/mirror.zip
-```
 
 ## Verification
 
