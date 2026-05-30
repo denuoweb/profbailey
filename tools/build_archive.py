@@ -663,6 +663,13 @@ h3 {
   box-shadow: var(--shadow-soft);
 }
 
+.archive-topbar,
+.archive-topbar *,
+.archive-topbar *::before,
+.archive-topbar *::after {
+  box-sizing: border-box;
+}
+
 .archive-brand-block {
   min-width: 0;
   flex: 1 1 auto;
@@ -735,6 +742,7 @@ h3 {
 }
 
 .archive-actions {
+  min-width: 0;
   flex: 0 0 auto;
   display: flex;
   align-items: center;
@@ -1015,6 +1023,8 @@ a:not([href]):focus-visible {
   .archive-topbar {
     align-items: stretch;
     flex-direction: column;
+    gap: 0.55rem;
+    padding: 0.55rem;
   }
 
   .archive-brand-block,
@@ -1034,19 +1044,29 @@ a:not([href]):focus-visible {
   }
 
   .archive-actions {
-    justify-content: stretch;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.4rem;
   }
 
   .archive-menu {
-    flex: 1 1 8rem;
+    min-width: 0;
+    width: 100%;
   }
 
   .archive-menu[open] {
-    flex-basis: 100%;
+    grid-column: 1 / -1;
   }
 
   .archive-menu > summary {
+    min-width: 0;
     width: 100%;
+    padding-right: 0.55rem;
+    padding-left: 0.55rem;
+  }
+
+  .archive-menu > summary::after {
+    flex: 0 0 auto;
   }
 
   .archive-menu-panel {
@@ -1069,6 +1089,21 @@ a:not([href]):focus-visible {
 
   h3 {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .archive-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .archive-breadcrumb li:not(:first-child):not([aria-current="page"]) {
+    display: none;
+  }
+
+  .archive-breadcrumb li + li::before {
+    margin-right: 0.35rem;
+    margin-left: 0.35rem;
   }
 }
 """
