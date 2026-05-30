@@ -499,13 +499,11 @@ def archive_intro(output_path: Path) -> str:
     course_items = []
     for slug, label, description in COURSES:
         href = to_archive_rel(PurePosixPath(slug) / "index.html", output_path)
-        source = SOURCE_BASE + slug + "/"
         course_items.append(
             f"""
             <article class="course-card">
               <h3><a href="{html_escape.escape(href)}">{html_escape.escape(label)}</a></h3>
               <p>{html_escape.escape(description)}</p>
-              <p class="source-link">Source: {html_escape.escape(source)}</p>
             </article>
             """.strip()
         )
@@ -889,12 +887,6 @@ h3 {
 
 .course-card h3 {
   font-size: 1.25rem;
-}
-
-.source-link {
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  overflow-wrap: anywhere;
 }
 
 .legacy-content {
