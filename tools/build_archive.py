@@ -513,12 +513,7 @@ def archive_intro(output_path: Path) -> str:
       <h2 id="archive-objective-heading">Mirrored Offsite Archive</h2>
       <p>
         This mirrored offsite archive preserves Mike Bailey's OSU home page and selected course resources as a backup
-        outside the legacy COE public_html / LAMP hosting environment. It is intended to keep the course content, links,
-        images, downloads, and related material available after the public-facing hosting transition.
-      </p>
-      <p>
-        COE's notice says COE-hosted public_html / LAMP content will no longer be publicly accessible from the internet
-        beginning Monday, June 26, 2028. This archive was generated from the public source pages on {ARCHIVE_DATE}.
+        outside the legacy COE public_html hosting environment.
       </p>
       <div class="course-grid" aria-label="Archived classes">
         {"".join(course_items)}
