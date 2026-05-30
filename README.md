@@ -52,6 +52,12 @@ python3 tools/build_archive.py
 python3 tools/build_hosting_site.py
 ```
 
+Run the generator smoke tests:
+
+```bash
+python3 -m unittest discover -s tests
+```
+
 Serve locally for browser testing:
 
 ```bash

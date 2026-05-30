@@ -47,8 +47,7 @@ def manifest_pages() -> set[PurePosixPath]:
     return pages
 
 
-def hosted_paths() -> set[PurePosixPath]:
-    pages = manifest_pages()
+def hosted_paths(pages: set[PurePosixPath]) -> set[PurePosixPath]:
     hosted = set(pages)
     for path in ARCHIVE.rglob("*"):
         if not path.is_file():
@@ -243,14 +242,15 @@ def main() -> None:
     if not ARCHIVE.exists():
         raise SystemExit("Missing archive/. Run tools/build_archive.py first.")
 
-    hosted = hosted_paths()
+    pages = manifest_pages()
+    hosted = hosted_paths(pages)
     copy_hosted_files(hosted)
 
     for rel in sorted(hosted):
         path = OUT / rel.as_posix()
         if not path.is_file():
             continue
-        if rel in manifest_pages():
+        if rel in pages:
             rewrite_html_file(path, hosted)
         elif path.suffix.lower() in {".css", ".js"}:
             rewrite_text_file(path, hosted)

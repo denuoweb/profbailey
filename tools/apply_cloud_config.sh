@@ -21,6 +21,9 @@ if [[ "${PRIVATE_STORAGE:-0}" == "1" ]]; then
     --quiet || true
   gcloud storage buckets update "gs://${ARCHIVE_BUCKET}" --public-access-prevention --project="${PROJECT_ID}"
 else
+  gcloud storage buckets update "gs://${ARCHIVE_BUCKET}" \
+    --no-public-access-prevention \
+    --project="${PROJECT_ID}"
   gcloud storage buckets add-iam-policy-binding "gs://${ARCHIVE_BUCKET}" \
     --member=allUsers \
     --role=roles/storage.objectViewer \
