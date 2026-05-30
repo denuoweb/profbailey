@@ -358,28 +358,142 @@ def rel_asset(output_path: Path, asset_name: str) -> str:
     return to_archive_rel(PurePosixPath("assets") / asset_name, output_path)
 
 
-def course_nav(output_path: Path, current_course: str | None = None, current_home: bool = False) -> str:
-    links = [
-        (
-            "Home",
-            to_archive_rel(PurePosixPath("index.html"), output_path),
-            current_home,
-        )
-    ]
-    for slug, label, _ in COURSES:
-        links.append(
-            (
-                label,
-                to_archive_rel(PurePosixPath(slug) / "index.html", output_path),
-                current_course == slug,
-            )
-        )
+def course_label(slug: str | None) -> str:
+    for course_slug, label, _ in COURSES:
+        if course_slug == slug:
+            return label
+    return "Archive"
 
+
+def segment_label(segment: str) -> str:
+    decoded = unquote(segment)
+    stem = re.sub(r"\.html?$", "", decoded, flags=re.I)
+    for slug, label, _ in COURSES:
+        if stem == slug:
+            return label
+    match = re.fullmatch(r"cs(\d+)(v?)", stem, flags=re.I)
+    if match:
+        return f"CS {match.group(1)}{match.group(2)}"
+    words = re.sub(r"[_-]+", " ", stem)
+    words = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", words)
+    return words[:1].upper() + words[1:]
+
+
+def directory_index_target(path: PurePosixPath) -> PurePosixPath | None:
+    if path.as_posix() == ".":
+        return PurePosixPath("index.html")
+    if path.as_posix() == "WebMjb":
+        target = PurePosixPath("WebMjb/mjb.html")
+        if (ROOT / target.as_posix()).is_file():
+            return target
+    if len(path.parts) == 1 and path.parts[0] in {course for course, _, _ in COURSES}:
+        return path / "index.html"
+    for index_name in ("index.html", "index.htm"):
+        target = path / index_name
+        source = ROOT / target.as_posix()
+        if source.is_file() and looks_like_html(source):
+            return target
+    return None
+
+
+def breadcrumb_items(source_path: Path, output_path: Path, title: str, *, home_index: bool = False) -> list[str]:
+    home_href = to_archive_rel(PurePosixPath("index.html"), output_path)
+    if home_index:
+        return ['<li aria-current="page"><span>Home</span></li>']
+
+    rel = root_relative(source_path)
+    parts = list(rel.parts)
+    if not parts:
+        return [f'<li><a href="{html_escape.escape(home_href)}">Home</a></li>']
+
+    rendered = [f'<li><a href="{html_escape.escape(home_href)}">Home</a></li>']
+    current_is_index = parts[-1].lower() in {"index.html", "index.htm"}
+    dirs = parts[:-1] if current_is_index else parts[:-1]
+
+    cumulative_parts: list[str] = []
+    for index, part in enumerate(dirs):
+        cumulative_parts.append(part)
+        cumulative = PurePosixPath(*cumulative_parts)
+        label = segment_label(part)
+        is_current_dir = current_is_index and index == len(dirs) - 1
+
+        if is_current_dir:
+            rendered.append(f'<li aria-current="page"><span>{html_escape.escape(label)}</span></li>')
+            continue
+
+        target = directory_index_target(cumulative)
+        if target == rel:
+            continue
+        if target is not None:
+            href = to_archive_rel(target, output_path)
+            rendered.append(f'<li><a href="{html_escape.escape(href)}">{html_escape.escape(label)}</a></li>')
+        else:
+            rendered.append(f'<li><span>{html_escape.escape(label)}</span></li>')
+
+    if not current_is_index:
+        current_label = title or segment_label(parts[-1])
+        rendered.append(f'<li aria-current="page"><span>{html_escape.escape(current_label)}</span></li>')
+
+    return rendered
+
+
+def archive_breadcrumb(source_path: Path, output_path: Path, title: str, *, home_index: bool = False) -> str:
+    return "\n          ".join(breadcrumb_items(source_path, output_path, title, home_index=home_index))
+
+
+def course_menu(output_path: Path, current_course: str | None = None) -> str:
     rendered = []
-    for label, href, current in links:
-        aria = ' aria-current="page"' if current else ""
-        rendered.append(f'<a href="{html_escape.escape(href)}"{aria}>{html_escape.escape(label)}</a>')
-    return "\n      ".join(rendered)
+    for slug, label, description in COURSES:
+        href = to_archive_rel(PurePosixPath(slug) / "index.html", output_path)
+        aria = ' aria-current="page"' if current_course == slug else ""
+        rendered.append(
+            f"""
+            <a href="{html_escape.escape(href)}"{aria}>
+              <span>{html_escape.escape(label)}</span>
+              <small>{html_escape.escape(description)}</small>
+            </a>
+            """.strip()
+        )
+    return "\n          ".join(rendered)
+
+
+def archive_topbar(
+    source_path: Path,
+    output_path: Path,
+    title: str,
+    current_course: str | None = None,
+    current_home: bool = False,
+) -> str:
+    home_href = to_archive_rel(PurePosixPath("index.html"), output_path)
+    return f"""
+    <header class="archive-topbar">
+      <div class="archive-brand-block">
+        <a class="archive-brand" href="{html_escape.escape(home_href)}">Bailey Archive</a>
+        <nav class="archive-breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            {archive_breadcrumb(source_path, output_path, title, home_index=current_home)}
+          </ol>
+        </nav>
+      </div>
+      <nav class="archive-actions" aria-label="Archive navigation">
+        <details class="archive-menu course-menu" name="archive-menu">
+          <summary>Courses</summary>
+          <div class="archive-menu-panel course-menu-panel">
+            {course_menu(output_path, current_course=current_course)}
+          </div>
+        </details>
+        <details class="archive-menu theme-menu" name="archive-menu">
+          <summary>Theme</summary>
+          <div class="archive-menu-panel theme-menu-panel" data-theme-controls role="group" aria-label="Theme switcher">
+            <button type="button" data-theme="system" aria-pressed="true">System</button>
+            <button type="button" data-theme="light" aria-pressed="false">Light</button>
+            <button type="button" data-theme="dark" aria-pressed="false">Dark</button>
+            <button type="button" data-theme="cyber" aria-pressed="false">Cyber</button>
+          </div>
+        </details>
+      </nav>
+    </header>
+    """
 
 
 def archive_intro(output_path: Path) -> str:
@@ -457,7 +571,7 @@ def render_page(source_path: Path, output_path: Path, *, home_index: bool = Fals
     escaped_source_note = html_escape.escape(source_note)
     escaped_github_url = html_escape.escape(GITHUB_URL)
     page = f"""<!DOCTYPE html>
-<html lang="en" data-theme="light" data-theme-storage-key="{THEME_STORAGE_KEY}">
+<html lang="en" data-theme-preference="system" data-theme-storage-key="{THEME_STORAGE_KEY}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -470,29 +584,21 @@ def render_page(source_path: Path, output_path: Path, *, home_index: bool = Fals
 </head>
 <body>
   <main class="showcase archive-page" id="main-content">
-    <div class="theme-toolbar" data-theme-controls role="group" aria-label="Theme switcher">
-      <button type="button" data-theme="light" aria-pressed="true">Light</button>
-      <button type="button" data-theme="dark" aria-pressed="false">Dark</button>
-      <button type="button" data-theme="cyber" aria-pressed="false">Cyber</button>
-    </div>
-
-    <nav class="archive-nav" aria-label="Archive sections">
-      {course_nav(output_path, current_course=current_course, current_home=home)}
-    </nav>
-
-    <header class="showcase-section archive-title">
-      <p class="eyebrow">Mirrored Offsite Archive</p>
-      <p class="lede">
-        Archived from <a href="{escaped_source_note}" target="_blank" rel="noopener noreferrer">{escaped_source_note}</a> on {ARCHIVE_DATE}.
-        Project source: <a href="{escaped_github_url}" target="_blank" rel="noopener noreferrer">GitHub</a>.
-      </p>
-    </header>
+    {archive_topbar(source_path, output_path, title, current_course=current_course, current_home=home)}
 
     {intro}
 
     <section class="showcase-section legacy-content" id="archived-content" aria-label="Archived page content">
 {content}
     </section>
+
+    <footer class="archive-footer">
+      <p class="eyebrow">Mirrored Offsite Archive</p>
+      <p>
+        Archived from <a href="{escaped_source_note}" target="_blank" rel="noopener noreferrer">{escaped_source_note}</a> on {ARCHIVE_DATE}.
+        Project source: <a href="{escaped_github_url}" target="_blank" rel="noopener noreferrer">GitHub</a>.
+      </p>
+    </footer>
   </main>
 </body>
 </html>
@@ -535,10 +641,6 @@ h3 {
   max-width: 78rem;
 }
 
-.archive-title {
-  text-align: center;
-}
-
 .eyebrow {
   margin: 0 0 0.35rem;
   color: var(--text-muted);
@@ -548,31 +650,215 @@ h3 {
   text-transform: uppercase;
 }
 
-.archive-nav {
+.archive-topbar {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-  margin-top: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  background: var(--surface-1);
+  box-shadow: var(--shadow-soft);
 }
 
-.archive-nav a {
+.archive-brand-block {
+  min-width: 0;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.archive-brand {
+  flex: 0 0 auto;
+  color: var(--text-color);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.archive-breadcrumb {
+  min-width: 0;
+  flex: 1 1 auto;
+  padding-left: 0.65rem;
+  border-left: 1px solid var(--border-color);
+  color: var(--text-muted);
+}
+
+.archive-breadcrumb ol {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.archive-breadcrumb li {
+  min-width: 0;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.archive-breadcrumb li[aria-current="page"] {
+  flex: 1 1 auto;
+}
+
+.archive-breadcrumb li + li::before {
+  margin: 0 0.45rem;
+  color: var(--text-muted);
+  content: "/";
+}
+
+.archive-breadcrumb a,
+.archive-breadcrumb span {
+  min-width: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.archive-breadcrumb a:hover,
+.archive-breadcrumb a:focus-visible {
+  color: var(--accent-color);
+}
+
+.archive-breadcrumb li[aria-current="page"] span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.archive-actions {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.archive-menu > summary {
   min-height: 44px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.45rem 0.8rem;
+  gap: 0.45rem;
+  padding: 0.45rem 0.75rem;
   border: 1px solid var(--border-color);
-  border-radius: 999px;
-  background: var(--surface-1);
-  box-shadow: var(--shadow-soft);
+  border-radius: 0.625rem;
+  background: var(--surface-2);
+  color: var(--text-color);
   font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
 }
 
-.archive-nav a[aria-current="page"] {
+.archive-menu[open] > summary {
   border-color: var(--accent-color);
   color: var(--accent-color);
   box-shadow: inset 0 0 0 1px var(--border-strong);
+}
+
+.archive-menu {
+  position: relative;
+}
+
+.archive-menu > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.archive-menu > summary::-webkit-details-marker {
+  display: none;
+}
+
+.archive-menu > summary::after {
+  width: 0.42rem;
+  height: 0.42rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  content: "";
+  transform: rotate(45deg) translateY(-0.1rem);
+}
+
+.archive-menu[open] > summary::after {
+  transform: rotate(225deg) translate(-0.05rem, -0.05rem);
+}
+
+.archive-menu-panel {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  right: 0;
+  z-index: 10;
+  width: min(22rem, calc(100vw - 2rem));
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  background: var(--surface-1);
+  box-shadow: var(--shadow-strong);
+}
+
+.course-menu-panel {
+  display: grid;
+  gap: 0.35rem;
+  max-height: min(32rem, calc(100vh - 8rem));
+  overflow-y: auto;
+}
+
+.course-menu-panel a {
+  min-height: 44px;
+  display: grid;
+  gap: 0.12rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.course-menu-panel a:hover,
+.course-menu-panel a:focus-visible,
+.theme-menu-panel button:hover,
+.theme-menu-panel button:focus-visible {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.course-menu-panel a[aria-current="page"],
+.theme-menu-panel button[aria-pressed="true"] {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  box-shadow: inset 0 0 0 1px var(--border-strong);
+}
+
+.course-menu-panel small {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+.theme-menu-panel {
+  display: grid;
+  gap: 0.35rem;
+  width: min(12rem, calc(100vw - 2rem));
+}
+
+.theme-menu-panel button {
+  min-height: 44px;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--text-color);
+  font: 700 0.95rem/1 var(--font-body);
+  text-align: left;
+  cursor: pointer;
 }
 
 .archive-links {
@@ -630,6 +916,22 @@ h3 {
 
 .legacy-content {
   overflow-x: auto;
+}
+
+.archive-footer {
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.archive-footer p {
+  margin: 0;
+}
+
+.archive-footer p + p {
+  margin-top: 0.35rem;
 }
 
 .legacy-content center {
@@ -710,6 +1012,53 @@ a:not([href]):focus-visible {
 }
 
 @media (max-width: 680px) {
+  .archive-topbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .archive-brand-block,
+  .archive-actions {
+    width: 100%;
+  }
+
+  .archive-brand-block {
+    flex-wrap: wrap;
+  }
+
+  .archive-breadcrumb {
+    flex-basis: 100%;
+    padding-top: 0.15rem;
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .archive-actions {
+    justify-content: stretch;
+  }
+
+  .archive-menu {
+    flex: 1 1 8rem;
+  }
+
+  .archive-menu[open] {
+    flex-basis: 100%;
+  }
+
+  .archive-menu > summary {
+    width: 100%;
+  }
+
+  .archive-menu-panel {
+    position: static;
+    width: 100%;
+    margin-top: 0.4rem;
+  }
+
+  .course-menu-panel {
+    max-height: none;
+  }
+
   h1 {
     font-size: 2.25rem;
   }

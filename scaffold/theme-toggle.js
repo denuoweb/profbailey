@@ -1,54 +1,69 @@
 const THEMES = ["light", "dark", "cyber"];
+const PREFERENCES = ["system", ...THEMES];
 const STORAGE_KEY = document.documentElement.dataset.themeStorageKey || "theme-preference";
 const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 const buttons = document.querySelectorAll("[data-theme-controls] button[data-theme]");
 
 const normalizeTheme = (value) => (THEMES.includes(value) ? value : null);
+const normalizePreference = (value) => (PREFERENCES.includes(value) ? value : null);
 const getSystemTheme = () => (mediaQuery.matches ? "dark" : "light");
 
-const readStoredTheme = () => {
+const readStoredPreference = () => {
   try {
-    return normalizeTheme(localStorage.getItem(STORAGE_KEY));
+    return normalizePreference(localStorage.getItem(STORAGE_KEY));
   } catch {
     return null;
   }
 };
 
-const writeStoredTheme = (theme) => {
+const writeStoredPreference = (preference) => {
   try {
-    localStorage.setItem(STORAGE_KEY, theme);
+    localStorage.setItem(STORAGE_KEY, preference);
   } catch {
     /* Ignore storage failures. */
   }
 };
 
-let explicitTheme = readStoredTheme() ?? normalizeTheme(document.documentElement.dataset.theme);
+const resolvePreference = (preference) => {
+  if (preference === "system") {
+    return getSystemTheme();
+  }
+  return normalizeTheme(preference) ?? getSystemTheme();
+};
 
-const syncButtons = (theme) => {
+let activePreference =
+  readStoredPreference() ??
+  normalizePreference(document.documentElement.dataset.themePreference) ??
+  normalizePreference(document.documentElement.dataset.theme) ??
+  "system";
+
+const syncButtons = (preference) => {
   buttons.forEach((button) => {
-    button.setAttribute("aria-pressed", String(button.dataset.theme === theme));
+    button.setAttribute("aria-pressed", String(button.dataset.theme === preference));
   });
 };
 
-const applyTheme = (theme) => {
-  const nextTheme = normalizeTheme(theme) ?? getSystemTheme();
+const applyPreference = (preference) => {
+  const nextPreference = normalizePreference(preference) ?? "system";
+  const nextTheme = resolvePreference(nextPreference);
+  document.documentElement.dataset.themePreference = nextPreference;
   document.documentElement.dataset.theme = nextTheme;
-  syncButtons(nextTheme);
+  syncButtons(nextPreference);
 };
 
 buttons.forEach((button) => {
   button.type = "button";
   button.addEventListener("click", () => {
-    explicitTheme = button.dataset.theme;
-    writeStoredTheme(explicitTheme);
-    applyTheme(explicitTheme);
+    activePreference = normalizePreference(button.dataset.theme) ?? "system";
+    writeStoredPreference(activePreference);
+    applyPreference(activePreference);
   });
 });
 
-applyTheme(explicitTheme ?? getSystemTheme());
+applyPreference(activePreference);
 
 mediaQuery.addEventListener("change", () => {
-  if (!explicitTheme) {
-    applyTheme(getSystemTheme());
+  if (activePreference === "system") {
+    applyPreference(activePreference);
   }
 });

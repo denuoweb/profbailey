@@ -18,7 +18,7 @@ Mirrored source roots:
 - https://web.engr.oregonstate.edu/~mjb/cs519v/
 - https://web.engr.oregonstate.edu/~mjb/cs550/
 
-The archive home page adds a mirrored-offsite objective and course index above the original home-page content. Course pages and nested HTML pages, including directory-index pages such as `glman/`, are wrapped in the provided `theme-showcase` light/dark/cyber scaffold, with local OSU links rewritten to archived files where possible.
+The archive home page adds a mirrored-offsite objective and course index above the original home-page content. Course pages and nested HTML pages, including directory-index pages such as `glman/`, are wrapped in the provided `theme-showcase` system/light/dark/cyber scaffold, with local OSU links rewritten to archived files where possible.
 
 ## Files
 
