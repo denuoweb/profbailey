@@ -410,9 +410,9 @@ def archive_intro(output_path: Path) -> str:
         beginning Monday, June 26, 2028. This archive was generated from the public source pages on {ARCHIVE_DATE}.
       </p>
       <p class="archive-links">
-        <a href="{html_escape.escape(GITHUB_URL)}" target="_blank" rel="noopener">GitHub repository</a>
-        <a href="{html_escape.escape(PUBLIC_ARCHIVE_URL)}" target="_blank" rel="noopener">Public archive</a>
-        <a href="{html_escape.escape(MIRROR_DOWNLOAD_URL)}" target="_blank" rel="noopener">Raw mirror ZIP</a>
+        <a href="{html_escape.escape(GITHUB_URL)}" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+        <a href="{html_escape.escape(PUBLIC_ARCHIVE_URL)}" target="_blank" rel="noopener noreferrer">Public archive</a>
+        <a href="{html_escape.escape(MIRROR_DOWNLOAD_URL)}" target="_blank" rel="noopener noreferrer">Raw mirror ZIP</a>
       </p>
       <div class="course-grid" aria-label="Archived classes">
         {"".join(course_items)}
@@ -483,8 +483,8 @@ def render_page(source_path: Path, output_path: Path, *, home_index: bool = Fals
     <header class="showcase-section archive-title">
       <p class="eyebrow">Mirrored Offsite Archive</p>
       <p class="lede">
-        Archived from <a href="{escaped_source_note}" target="_blank" rel="noopener">{escaped_source_note}</a> on {ARCHIVE_DATE}.
-        Project source: <a href="{escaped_github_url}" target="_blank" rel="noopener">GitHub</a>.
+        Archived from <a href="{escaped_source_note}" target="_blank" rel="noopener noreferrer">{escaped_source_note}</a> on {ARCHIVE_DATE}.
+        Project source: <a href="{escaped_github_url}" target="_blank" rel="noopener noreferrer">GitHub</a>.
       </p>
     </header>
 
@@ -904,7 +904,11 @@ def main() -> None:
     write_robots()
 
     generated: list[Path] = []
-    sources = html_files()
+    sources = [
+        source
+        for source in html_files()
+        if root_relative(source) != PurePosixPath("index.html")
+    ]
     for source in sources:
         out = output_path_for(source)
         render_page(source, out)

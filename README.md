@@ -22,8 +22,8 @@ The archive home page adds a mirrored-offsite objective and course index above t
 
 ## Files
 
-- `archive/` - final standalone archive, currently 132 themed HTML pages and 2,307 files. This is ignored by Git.
-- `hosting/` - generated Firebase Hosting payload, currently 1,005 files / 49 MB. It keeps HTML, theme files, local Cyber fonts, and small assets on `profbailey.web.app`; larger archive assets are linked from Cloud Storage. This is ignored by Git.
+- `archive/` - final standalone archive, currently 131 themed HTML pages and 2,310 files. This is ignored by Git.
+- `hosting/` - generated Firebase Hosting payload, currently 1,008 files / 49 MB. It keeps HTML, theme files, local Cyber fonts, and small assets on `profbailey.web.app`; larger archive assets are linked from Cloud Storage. This is ignored by Git.
 - `archive/index.html` - generated home page and main entry point.
 - `archive/MANIFEST.md` - generated list of themed HTML pages.
 - `mirror/` - raw Wget mirror used as generator input. This is ignored by Git and can be packaged for object storage.
@@ -148,7 +148,7 @@ https://storage.googleapis.com/profbailey-mirror/mirror.zip
 
 Final local-link audit:
 
-- HTML pages: 132
+- HTML pages: 131
 - Local URL references checked: 3,409
 - Live external `cs.oregonstate.edu/~mjb` / `web.engr.oregonstate.edu/~mjb` references: 0
 - Remaining missing local references: 20
